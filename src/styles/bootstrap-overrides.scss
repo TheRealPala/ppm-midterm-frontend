@@ -1,4 +1,4 @@
 @import "variables";
 .custom-width {
-  width: $fullscreen-width;
+  width: var(--main-width);
 }
