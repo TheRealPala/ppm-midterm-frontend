@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+.nav-collapsed {
+  background-color: #f9f9f9;
+  height: 70px;
+  border-top: 1px #e9e9ee solid;
+}
+.submit {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.collapsed-button {
+  cursor: pointer;
+}
+
+.submit, .collapsed-button{
+  &:hover {
+    color: $color-hover;
+  }
+}

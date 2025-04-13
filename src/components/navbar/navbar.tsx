@@ -9,6 +9,8 @@ import Collapse from 'react-bootstrap/Collapse';
 import {useState} from "react";
 import {faBars, faMagnifyingGlass, faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHtml5} from "@fortawesome/free-brands-svg-icons";
+import {NavCollapsed} from "../navCollapsed/navCollapsed";
 export function CustomNavbar() {
     const [show, setShow] = useState(false);
     const [collapsed, setCollapsed] = useState(false);
@@ -33,16 +35,17 @@ export function CustomNavbar() {
                                 <span className="color-change">ABBONATI</span>
                             </div>
                             <div className="col-5 d-flex text-center align-items-center justify-content-end navbar-color pe-2">
+                                <span className="color-change me-3">
+                                    <FontAwesomeIcon icon={faHtml5} />
+                                </span>
                                 <span className="nav-text color-change">
                                      <span className={"me-2"}>Accedi</span><FontAwesomeIcon icon={faUser}/>
                                 </span>
                             </div>
                         </div>
                         <Collapse in={collapsed}>
-                            <div id="example-collapse-text">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                labore wes anderson cred nesciunt sapiente ea proident.
+                            <div className="w-full min-vw-100">
+                                <NavCollapsed setCollapsed={setCollapsed}/>
                             </div>
                         </Collapse>
                     </div>
