@@ -1,5 +1,35 @@
+.nav-text {
+  font-size: 14px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 4px;
+}
+
+.navbar-color {
+  color:#333333;
+}
+
 .offcanvas {
+  --bs-offcanvas-width: 30vw;
   @media (max-width: 767px) {
     --bs-offcanvas-width: 100vw;
   }
+}
+
+.offcanvas-backdrop {
+  background-color: rgba(255, 255, 255);
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0.7;
+}
+
+.subscribe {
+  font-size: 11px;
+}
+
+.color-change:hover {
+  color: #4b88ca;
+  cursor: pointer;
 }

@@ -1,34 +1,50 @@
 import './navbar.scss';
 import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import {List} from 'react-bootstrap-icons'
+import Collapse from 'react-bootstrap/Collapse';
 import {useState} from "react";
+import {faBars, faMagnifyingGlass, faUser} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 export function CustomNavbar() {
     const [show, setShow] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleCollapse = () => setCollapsed(!collapsed);
     return (
         <>
-            <Navbar expand={false} className="bg-body border border-2 border-black">
-                    <div className="d-flex justify-content-center w-100">
+            <Navbar sticky={"top"} expand={false} className="bg-body">
+                    <div className="navbar d-flex justify-content-center w-100 py-1">
                         <div className="d-flex custom-width">
-                            <div className="col-2">
-                                <button className="btn" onClick={handleShow}>
-                                    <List></List>Menu
-                                </button>
+                            <div className="col-5 flex color-change">
+                                <span className="nav-text btn navbar-color color-change" onClick={handleShow}>
+                                    <FontAwesomeIcon icon={faBars}/> <span className={"ms-1"}>Menu</span>
+                                </span>
+                                <span onClick={handleCollapse}  aria-controls="example-collapse-text"
+                                        aria-expanded={collapsed} className="d-none d-md-inline nav-text btn navbar-color color-change">
+                                    <FontAwesomeIcon icon={faMagnifyingGlass}/> <span className={"ms-1"}>Cerca</span>
+                                </span>
                             </div>
-                            <div className="col-8 text-center align-content-center">
-                                Abbonati
+                            <div className="col-2 text-center align-content-center navbar-color subscribe fw-bold">
+                                <span className="color-change">ABBONATI</span>
                             </div>
-                            <div className="col-2 align-content-center">
-                                prova
+                            <div className="col-5 d-flex text-center align-items-center justify-content-end navbar-color pe-2">
+                                <span className="nav-text color-change">
+                                     <span className={"me-2"}>Accedi</span><FontAwesomeIcon icon={faUser}/>
+                                </span>
                             </div>
                         </div>
+                        <Collapse in={collapsed}>
+                            <div id="example-collapse-text">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </Collapse>
                     </div>
                     <Navbar.Offcanvas
                         placement="start"
