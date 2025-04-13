@@ -1,2 +1,6 @@
 $white:#fff;
 $body-bg:$white;
+$fullscreen-width:1260px;
+.custom-width {
+  width: $fullscreen-width;
+}

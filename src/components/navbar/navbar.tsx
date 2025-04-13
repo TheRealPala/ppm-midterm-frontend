@@ -1,3 +1,4 @@
+import './navbar.scss';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -14,24 +15,24 @@ export function CustomNavbar() {
     return (
         <>
             <Navbar expand={false} className="bg-body border border-2 border-black">
-                <Container fluid >
-                    <div className="row col-12">
-                        <div className="col-2">
-                            <button className="btn" onClick={handleShow}>
-                                <List></List>Menu
-                            </button>
-                        </div>
-                        <div className="col-8 text-center flex justify-content-center align-content-center">
-                            Abbonati
-                        </div>
-                        <div className="col-2">
-                            prova
+                    <div className="d-flex justify-content-center w-100">
+                        <div className="d-flex custom-width">
+                            <div className="col-2">
+                                <button className="btn" onClick={handleShow}>
+                                    <List></List>Menu
+                                </button>
+                            </div>
+                            <div className="col-8 text-center align-content-center">
+                                Abbonati
+                            </div>
+                            <div className="col-2 align-content-center">
+                                prova
+                            </div>
                         </div>
                     </div>
                     <Navbar.Offcanvas
-                        id={'offcanvasNavbar-expand-false'}
                         placement="start"
-                        aria-labelledby={'offcanvasNavbar-expand-false'}
+                        aria-labelledby={'offcanvasNavbar'}
                         show={show} onHide={handleClose}
                     >
                         <Offcanvas.Header closeButton>
@@ -68,7 +69,6 @@ export function CustomNavbar() {
                             </Form>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
-                </Container>
             </Navbar>
         </>
     );
