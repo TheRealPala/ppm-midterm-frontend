@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import './navCollapsed.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass, faXmark} from "@fortawesome/free-solid-svg-icons";
@@ -15,8 +15,8 @@ export function NavCollapsed ({setCollapsed}:navCollapsedProps) {
             <span className="submit">
                     <FontAwesomeIcon icon={faMagnifyingGlass}/>
                 </span>
-            <span className="collapsed-button ms-2">
-                    <FontAwesomeIcon icon={faXmark} onClick={() => {setCollapsed(false)}}/>
+            <span className="collapsed-button ms-3 mt-1">
+                    <FontAwesomeIcon icon={faXmark} className={"close-collapse"} onClick={() => {setCollapsed(false)}}/>
                 </span>
         </div>
     </div>
