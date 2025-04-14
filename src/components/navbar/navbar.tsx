@@ -25,18 +25,18 @@ export function CustomNavbar() {
     return (
         <>
             <Navbar sticky={"top"} expand={false} className="bg-body">
-                <div className="navbar d-flex flex-column justify-content-center w-100 py-1">
+                <div className="navbar d-flex flex-column justify-content-center w-100">
                     <div className="d-md-none d-flex col-12 py-1 text-center justify-content-center position-relative mobile-banner">
                         <span className="navbar-color subscribe fw-bold">ABBONATI</span>
-                        <div className="position-absolute end-0 me-2">
+                        <div className="position-absolute end-0 me-3">
                             <FontAwesomeIcon icon={faHtml5}/>
                         </div>
                     </div>
-                    <div className="d-flex custom-width pt-2">
+                    <div className="d-flex custom-width mt-2 mt-md-0 ">
                         <div className="col-md-5 col-1 flex color-change">
                                 <span className="nav-text btn navbar-color color-change" onClick={handleShow}>
-                                    <FontAwesomeIcon icon={faBars}/> <span
-                                    className="ms-1 d-none d-md-inline">Menu</span>
+                                    <FontAwesomeIcon icon={faBars} className={"text-xl"}/>
+                                    <span className="ms-1 d-none d-md-inline">Menu</span>
                                 </span>
                             <span onClick={handleCollapse} aria-controls="example-collapse-text"
                                   aria-expanded={collapsed}
@@ -52,18 +52,17 @@ export function CustomNavbar() {
                                         src={"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAAAcCAYAAAC+uCc6AAACuklEQVRoQ+2XW29xURCGR0kI6hARpxYtaR0u+///gVtRp2gFiWqd4tziyzvJlq0iXZquC76ZG/Y2a2bnncfMbEuhUNiSmCjwgwIWAUUYUVFAQFFRSXxIQBEIlBQQUJRkEicBRRhQUkBAUZJJnAQUYUBJAQFFSSZxOntQ7u7uyOPx0NfXFxWLxV1F4/E4eb1evp7P59RoNGi9XvN1IpEgt9tNFouFBoMBtdvtX5GQTCY593a7pfF4TM1mk7//ZY5fPZiGQ2cPCgq+2WwIwJhBsdlsDA/s5uaGCwggAE8oFKJKpcKg5PN5qtfrDNOp5vf7aTgc8rFUKkWj0Yh6vd6f5jj1mXT5nz0oEMZut1M6nd4DxSzY7e0tw2SAEg6HGZSrqyvKZrNULpfp8/Nzd8RqtfL9arVKy+WS7u/vuWO8v78frUMkEmHwOp0Og/JTDl0F1RX3okHBaPD5fFxsgGGMHuM+Cgt43t7eDvTFSIlGo/xbIBBgaI4Z4uRyOXp5eaHpdMpuKjl0FVVH3IsGxRAMHQWwoOhOp5MBwLhBR8lkMvx9sVgc6ItdBuMFI83ccb47YuytVqvdrnNKDh1F1RHzvwDF5XLxnoIRE4vFeHfpdrusJ2CYTCb08fFxoO/j4yOPNXSTYzsM4mIfQjcx7JQcOoqqI+bFgoJ/9Ww2Y83QUdA9Xl9fKRgM8jhC8Y0dxTwyDJGx8DocDgYI55+fn3dvNGaf6+trqtVqe7VRzaGjoLpinj0oeNtAxzDecrBMYul8eHjgQsPQMQAJdhTsE9gfcAbW7/d5ATUbziFuqVTiJRhdA5/f/Z6enrg7Ga/EiNVqtZRy6CqorrhnD4ouYSTuvgICihChpICAoiSTOAkowoCSAgKKkkziJKAIA0oKCChKMomTgCIMKCkgoCjJJE4CijCgpICAoiSTOP0DUcKpALeICLYAAAAASUVORK5CYII="}/>
                                 </span>
                         </div>
-                        <div
-                            className="col-md-5 col-1 d-flex text-center align-items-center justify-content-end navbar-color pe-2">
+                        <div className="col-md-5 col-1 d-flex text-center align-items-center justify-content-end navbar-color pe-3 pt-1">
                                 <span className="color-change me-3 d-none d-md-inline">
                                     <FontAwesomeIcon icon={faHtml5}/>
                                 </span>
                             <span className="nav-text color-change">
                                      <span className={"me-2 d-none d-md-inline"}>Accedi</span><FontAwesomeIcon
-                                icon={faUser}/>
+                                icon={faUser} className="me-2"/>
                                 </span>
                         </div>
                     </div>
-                    <div className="d-md-none d-inline mt-2 navbar-color subscribe text-center w-100 py-3 border-top border-1 border-black">
+                    <div className="d-md-none d-inline mt-2 navbar-color subscribe text-center w-100 pt-3 pb-1 border-top border-1 border-black">
                         {dateString.toUpperCase()} - AGGIORNATO ALLE {now.format('HH:mm')}
                     </div>
                     <Collapse in={collapsed}>
