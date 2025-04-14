@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+.nav-banner {
+  height: 110px;
+  background-color: #42505F;
+}
+@media (max-width: 767px) {
+  .nav-banner {
+    height: 154px;
+  }
+}
+.nav-banner-content {
+  color:#E7F1FF;
+}
