@@ -1,14 +1,21 @@
-$white:#fff;
-$body-bg:$white;
+$white: #fff;
+$body-bg: $white;
 $font: 'Eugenio Sans Text', 'Helvetica Neue', Helvetica, sans-serif;
 $font-family-base: $font;
 $font-family-sans-serif: $font;
 $color-hover: #4b88ca;
 :root {
-  --main-width: 1268px;
+  --main-width: 1260px;
 }
-@media (max-width: 1268px) {
+
+@media (max-width: 1539px) {
   :root {
-    --main-width: 100vw;
+    --main-width: 996px;
+  }
+
+  @media (max-width: 995px) {
+    :root {
+      --main-width: 100vw;
+    }
   }
 }

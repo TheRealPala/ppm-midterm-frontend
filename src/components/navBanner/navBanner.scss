@@ -1,13 +1,59 @@
 @import "src/styles/variables";
-.nav-banner {
-  height: 110px;
+.nav-banner-wrapper {
+  height: 135px;
   background-color: #42505F;
+  overflow: hidden;
 }
-@media (max-width: 767px) {
-  .nav-banner {
-    height: 154px;
-  }
-}
+
 .nav-banner-content {
   color:#E7F1FF;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.banner-img {
+  max-width: 210px;
+  width: 100%;
+  height: auto;
+  max-height: 118px;
+}
+
+.nav-banner {
+  padding: 16px;
+}
+
+@media (max-width: 1539px) {
+
+  .nav-banner-wrapper {
+    height: 110px;
+  }
+
+  .nav-banner-content {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .banner-img {
+    max-width: 166px;
+    max-height: 93px;
+  }
+
+  .nav-banner {
+    padding: 8px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .banner-img {
+    max-width: 250px;
+    max-height: 141px;
+  }
+  .nav-banner-wrapper {
+    height: 154px;
+  }
+  .nav-banner-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

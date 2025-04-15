@@ -28,20 +28,20 @@ export function CustomNavbar() {
                 <div className="navbar d-flex flex-column justify-content-center w-100">
                     <div className="d-md-none d-flex col-12 py-1 text-center justify-content-center position-relative mobile-banner">
                         <span className="navbar-color subscribe fw-bold">ABBONATI</span>
-                        <div className="position-absolute end-0 me-3">
-                            <FontAwesomeIcon icon={faHtml5}/>
+                        <div className="position-absolute mobile-logo end-0 me-3">
+                            <FontAwesomeIcon size={"lg"} icon={faHtml5}/>
                         </div>
                     </div>
                     <div className="d-flex custom-width mt-2 mt-md-0 ">
                         <div className="col-md-5 col-1 flex color-change">
                                 <span className="nav-text btn navbar-color color-change" onClick={handleShow}>
-                                    <FontAwesomeIcon icon={faBars} className={"text-xl"}/>
+                                    <FontAwesomeIcon size={"lg"} icon={faBars} className={"mt-1"}/>
                                     <span className="ms-1 d-none d-md-inline">Menu</span>
                                 </span>
                             <span onClick={handleCollapse} aria-controls="example-collapse-text"
                                   aria-expanded={collapsed}
-                                  className="d-none d-md-inline nav-text btn navbar-color color-change">
-                                    <FontAwesomeIcon icon={faMagnifyingGlass}/> <span className={"ms-1"}>Cerca</span>
+                                  className="d-none d-md-inline pt-2 nav-text btn navbar-color color-change">
+                                    <FontAwesomeIcon size={"lg"} icon={faMagnifyingGlass}/> <span className={"ms-1"}>Cerca</span>
                                 </span>
                         </div>
                         <div
@@ -58,7 +58,7 @@ export function CustomNavbar() {
                                 </span>
                             <span className="nav-text color-change">
                                      <span className={"me-2 d-none d-md-inline"}>Accedi</span><FontAwesomeIcon
-                                icon={faUser} className="me-2"/>
+                                icon={faUser} className="me-1"/>
                                 </span>
                         </div>
                     </div>
