@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  --bs-navbar-padding-y: 4px;
+  --bs-navbar-padding-y: 3px;
 }
 
 .navbar-color {
@@ -21,6 +21,11 @@
 
 .offcanvas {
   --bs-offcanvas-width: 30vw;
+
+  @media (max-width: 1539px) {
+    --bs-offcanvas-width: 50vw;
+  }
+
   @media (max-width: 767px) {
     --bs-offcanvas-width: 100vw;
   }

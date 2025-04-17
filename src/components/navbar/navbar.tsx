@@ -11,17 +11,13 @@ import {faBars, faMagnifyingGlass, faUser} from "@fortawesome/free-solid-svg-ico
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHtml5} from "@fortawesome/free-brands-svg-icons";
 import {NavCollapsed} from "../navCollapsed/navCollapsed";
-import moment from "moment";
-import 'moment/locale/it'
+import timeService from "../../services/timeService";
 export function CustomNavbar() {
     const [show, setShow] = useState(false);
     const [collapsed, setCollapsed] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const handleCollapse = () => setCollapsed(!collapsed);
-    moment.locale('it');
-    const now = moment();
-    const dateString = now.format('D MMMM YYYY');
     return (
         <>
             <Navbar sticky={"top"} expand={false} className="bg-body">
@@ -63,7 +59,7 @@ export function CustomNavbar() {
                         </div>
                     </div>
                     <div className="d-md-none d-inline mt-2 navbar-color subscribe text-center w-100 pt-3 pb-1 border-top border-1 border-black">
-                        {dateString.toUpperCase()} - AGGIORNATO ALLE {now.format('HH:mm')}
+                        {timeService.getDateTimeString()}
                     </div>
                     <Collapse in={collapsed}>
                         <div className="w-full min-vw-100">

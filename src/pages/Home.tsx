@@ -1,5 +1,6 @@
 import {CustomNavbar} from "../components/navbar/navbar";
 import {NavBanner} from "../components/navBanner/navBanner";
+import {Logo} from "../components/logo/logo";
 
 
 export function Home() {
@@ -7,6 +8,7 @@ export function Home() {
         <>
             <CustomNavbar/>
             <NavBanner/>
+            <Logo />
         </>
     );
 }
