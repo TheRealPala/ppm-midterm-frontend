@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+.title {
+  padding: 16px;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  height: 53px;
+  border-bottom: 1px solid #CECECE;
+}
+
+.element {
+  border-bottom: 1px solid #CECECE;
+  color: #888686;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  height: 48px;
+  max-height: 45px;
+}
+
+.bottom {
+  border-bottom: 1px solid #000000;
+  color: #888686;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  height: 48px;
+  max-height: 45px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.animated-border {
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.animated-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: $color-hover;
+  transition: width 0.15s ease;
+  z-index: 2;
+}
+.animated-border:hover{
+  color: $color-hover;
+}
+.animated-border:hover::after {
+  width: 100%;
+  transition: width 0.2s ease;
+}

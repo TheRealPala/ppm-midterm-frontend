@@ -14,10 +14,10 @@ export function NavCollapsed ({setCollapsed}:navCollapsedProps) {
             <input type="text" className="form-control search-input" placeholder="Cerca articoli o argomenti"/>
             <span className="submit">
                     <FontAwesomeIcon icon={faMagnifyingGlass}/>
-                </span>
+            </span>
             <span className="collapsed-button ms-3 mt-1">
                     <FontAwesomeIcon icon={faXmark} className={"close-collapse"} onClick={() => {setCollapsed(false)}}/>
-                </span>
+            </span>
         </div>
     </div>
 }
