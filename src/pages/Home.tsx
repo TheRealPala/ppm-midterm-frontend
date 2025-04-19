@@ -1,6 +1,7 @@
 import {CustomNavbar} from "../components/navbar/navbar";
 import {NavBanner} from "../components/navBanner/navBanner";
 import {Logo} from "../components/logo/logo";
+import {NavDropdown} from "../components/navDropdown/navDropdown";
 
 
 export function Home() {
@@ -9,6 +10,10 @@ export function Home() {
             <CustomNavbar/>
             <NavBanner/>
             <Logo />
+
+            <div className={"w-100 d-flex align-items-center justify-content-center"}>
+                <NavDropdown />
+            </div>
         </>
     );
 }
