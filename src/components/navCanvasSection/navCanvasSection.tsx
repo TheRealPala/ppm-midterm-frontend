@@ -1,13 +1,8 @@
 import React from 'react';
 import './navCanvasSection.scss';
+import {NavCanvasSectionProps} from "../../interfaces/navCanvasSectionPropsInterface";
 
-interface navCanvasSectionProps {
-    title: string,
-    elements: string[],
-    bottom: string
-}
-
-export function NavCanvasSection({title, elements, bottom}: navCanvasSectionProps) {
+export function NavCanvasSection({title, elements, bottom}: NavCanvasSectionProps) {
     return (
         <div key={title} className="w-full d-flex flex-wrap">
             <div className="w-100 title fw-bold ps-3">

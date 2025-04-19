@@ -1,0 +1,104 @@
+{
+  "sections": [
+    {
+      "title": "SEZIONI",
+      "elements": [
+        "Politica", "Economia",
+        "Esteri", "Italia",
+        "Cronaca", "Commenti",
+        "Scuola", "Cultura",
+        "Sport", "Spettacoli",
+        "Serie TV", "Video",
+        "Metropolis", "Rubriche",
+        "Podcast", "Salute",
+        "Green&Blue", "Italian Tech",
+        "Moda e Beauty", "Il Gusto",
+        "La Zampa", "Motori",
+        "Design", "Vaticano",
+        "Londra", "Viaggi",
+        "Elezioni", "Mondo Solidale"
+      ],
+      "bottom": "Repubblica@Scuola"
+    },
+    {
+      "title": "EDIZIONI LOCALI",
+      "elements": [
+        "Roma", "Milano",
+        "Bari", "Bologna",
+        "Firenze", "Genova",
+        "Napoli", "Palermo"
+      ],
+      "bottom": "Torino"
+    },
+    {
+      "title": "DIRETTE SPORTIVE",
+      "elements": [
+        "Diretta Serie A",
+        "Diretta Serie B",
+        "Diretta Coppa Italia",
+        "Diretta Champions League",
+        "Diretta Europa League",
+        "Diretta Formula 1"
+      ],
+      "bottom": "Diretta Moto GP"
+    },
+    {
+      "title": "INSERT!",
+      "elements": [
+        "Affari&Finanza",
+        "D",
+        "Il Venerdì",
+        "Robinson"
+      ],
+      "bottom": "U"
+    },
+    {
+      "title": "SPECIALI",
+      "elements": [
+        "Oncologia",
+        "Salute Seno",
+        "Giochi senza barriere",
+        "Europa, Italia"
+      ],
+      "bottom": "Repubblica dei cavalli"
+    },
+    {
+      "title": "SERVIZI E PARTNER",
+      "elements": [
+        "Annunci",
+        "Aste",
+        "Biblioteca",
+        "Codici Sconto",
+        "Consigli.it",
+        "Edicola",
+        "Giochi e scommesse",
+        "Giochi online",
+        "Ilmiolibro",
+        "Lavoro",
+        "Meteo",
+        "Necrologie",
+        "Newsletter",
+        "Oroscopo"
+      ],
+      "bottom": "Preventivi auto"
+    },
+    {
+      "title": "DIZIONARI",
+      "elements": [
+        "Dizionario di Italiano",
+        "Dizionario di Inglese"
+      ],
+      "bottom": "Dizionario dei sinonimi"
+    },
+    {
+      "title": "CODICI SCONTO",
+      "elements": [
+        "Codice sconto Unieuro",
+        "Codice sconto Zalando Privé",
+        "Codice sconto Mediaworld",
+        "Codice sconto ITA Airways"
+      ],
+      "bottom": "Codice sconto Luisa Via Roma"
+    }
+  ]
+}
