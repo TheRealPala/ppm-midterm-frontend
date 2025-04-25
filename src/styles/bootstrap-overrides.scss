@@ -2,3 +2,26 @@
 .custom-width {
   width: var(--main-width);
 }
+.sans-serif-font {
+  font-family: 'Eugenio Sans Text', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.serif-font {
+  font-family: 'Times New Roman', Times, serif;
+}
+.text-orange {
+  color: #F75B00;
+}
+.blink {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

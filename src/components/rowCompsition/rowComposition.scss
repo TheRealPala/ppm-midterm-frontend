@@ -1,0 +1,23 @@
+.row-comp-border {
+  border-top: 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.top-comp-divider {
+  border-top: 1px solid lightgray;
+  width: 95%;
+}
+
+@media (min-width: 1023px) {
+  .row-comp-wrapper {
+    min-width: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-comp-divider {
+    width: 100%;
+  }
+}

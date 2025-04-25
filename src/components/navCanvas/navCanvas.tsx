@@ -24,8 +24,7 @@ export function NavCanvas({show, setShow}: NavCanvasProps) {
             <div className="h-100 w-100 relative">
                 <Offcanvas.Header>
                     <div className="w-100 d-flex align-content-center">
-                        <img alt={"logo"} className="me-auto"
-                             src={"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAzCAYAAAD7JnqGAAACYklEQVRYR+2XSYsiQRCFo8V9x4MrHkRxRfz//8GTehAUcd/FDVFch1dQxVhjd2U0k/YMVEDdoiq/evkyMuKjWq0+6B+MDxOMuSumYkzB6P9VzGq1UqVSMfzh+/1Ot9uNLpcLHQ4H2u/3tNls6PH43qE3VEwU7BX59Xql4XBIq9XK8Mf0CVLB1MXm8zkNBgMWHBsMKvT7/T8WsVgsZLfbyefzKY8+er0eLZdLYTg22Pl8pnq9/uUCHo+H0uk02Ww2LQ/ew3uinpMCBhrA5fP5px9ot9u03W6FVJMGhtWz2ezTts5mM+UwiIRUsHg8TrFYTONYr9fU6XREuIwLrL5ciHhMXTkcDlMymdRAdrsdtVqtnweLRqOUSCQ0EPgLPhMJqVuZSqUoFAppHJx6Jg0MFiiXy4T6pgb8BZ+JhBQwwKCO+f3+n69jv1f+SCRCDofjSRiOWniRrZjINuhzcE/CX5yQBoarB23PZDKh4/HIYVJypYHh4wDD5Y2LnxtssFfdheovt9tNwWDwieF0OlGz2VSaSE6wwYwqP0yPE+lyub5V8dWX/joYPowaViwWn9qebrfL6mSlgAEOWwrl1IAF0I9hNhAJaWBYPJfLkdfr1TjG47FySkVCKhigAKcGDkCtVhNSTSrYK9VGoxFNp1ND0aSDYTBBJ8v1mnQwAKH3xwyghsgV9RawQCBAmUxGAxOZmN4CBqJCoUC4GdTAbLpYLD712tvA9HUNN0ij0fh0znwbGKQplUrkdDo1lb6azg3BDM+1pAQTjCusqZipGFcBbr7pMVMxrgLcfNNjpmJcBbj5vwB2lSQLOJ4acQAAAABJRU5ErkJggg=="}/>
+                        <img alt={"logo"} className="me-auto" src={"https://placehold.co/40x60"} />
                         <div className={"position-relative mt-auto mb-auto"}>
                             <input className="canvas-search mt-auto mb-auto" type="search" name="query"
                                    placeholder="Ricerca su TITOLO_SITO"/>
