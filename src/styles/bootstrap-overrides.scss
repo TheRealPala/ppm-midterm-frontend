@@ -9,7 +9,10 @@
   font-family: 'Times New Roman', Times, serif;
 }
 .text-orange {
-  color: #F75B00;
+  color: $orange;
+}
+.border-orange {
+    border-color: $orange;
 }
 .blink {
   animation: blink 2s infinite;

@@ -7,6 +7,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircle} from "@fortawesome/free-solid-svg-icons";
 import {RowComposition} from "../components/rowCompsition/rowComposition";
 import {ColStaticDisplay} from "../components/colStaticDisplay/colStaticDisplay";
+import {Card} from "../components/card/card";
+import {ResponsiveCard} from "../components/responsiveCard/responsiveCard";
 
 
 export function Home() {
@@ -53,7 +55,7 @@ export function Home() {
                             </div>
                         </>
                     } />
-
+                    <ResponsiveCard/>
                 </div>
             </div>
         </>
