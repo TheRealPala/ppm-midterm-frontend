@@ -7,10 +7,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircle} from "@fortawesome/free-solid-svg-icons";
 import {RowComposition} from "../components/rowCompsition/rowComposition";
 import {ColStaticDisplay} from "../components/colStaticDisplay/colStaticDisplay";
-import {Card} from "../components/card/card";
-import {ResponsiveCard} from "../components/responsiveCard/responsiveCard";
 import {RowCardCarousel} from "../components/rowCardCarousel/rowCardCarousel";
 import {BlueCarousel} from "../components/blueCarousel/blueCarousel";
+import {Card} from "../components/card/card";
+import {ColumnsDivider} from "../components/columnsDivider/columnsDivider";
 
 
 export function Home() {
@@ -43,7 +43,7 @@ export function Home() {
                                 </div>
                             </>
                         }
-                        bottom = {<RowComposition/>}
+                        bottom={<RowComposition/>}
                     />
                     <ColStaticDisplay body={
                         <>
@@ -56,10 +56,40 @@ export function Home() {
                                 sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
                             </div>
                         </>
-                    } />
-                    <RowCardCarousel />
-                    <div className={"w-full py-3 border-standard"} />
-                    <BlueCarousel />
+                    }/>
+                    <RowCardCarousel/>
+                    <div className={"w-full py-3 border-standard"}/>
+                    <BlueCarousel/>
+
+                    <ColumnsDivider
+                        left={
+                            <>
+                                <RowCardCarousel/>
+                                <RowCardCarousel/>
+                                <RowCardCarousel/>
+                                <RowCardCarousel/>
+                            </>
+                        }
+                        right={
+                            <>
+                                <div className={"sticky-col-el d-flex justify-content-center"}>
+                                    <Card/>
+                                </div>
+                            </>
+                        }
+                        ></ColumnsDivider>
+                    <div className="w-full d-flex">
+                        <div className={"col-12 col-md-9 h-100"}>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                        </div>
+                        <div
+                            className={"col-3 d-none d-md-flex h-full border-end border-1 border-black position-relative "}>
+                            <Card/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
