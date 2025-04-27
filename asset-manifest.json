@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ppm-midterm-frontend/static/css/main.583e1c72.css",
-    "main.js": "/ppm-midterm-frontend/static/js/main.db6d934b.js",
-    "static/js/453.38c8597c.chunk.js": "/ppm-midterm-frontend/static/js/453.38c8597c.chunk.js",
+    "main.css": "/ppm-midterm-frontend/static/css/main.70b9820e.css",
+    "main.js": "/ppm-midterm-frontend/static/js/main.8fe23f3d.js",
+    "static/js/453.5471eaac.chunk.js": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js",
     "index.html": "/ppm-midterm-frontend/index.html",
-    "main.583e1c72.css.map": "/ppm-midterm-frontend/static/css/main.583e1c72.css.map",
-    "main.db6d934b.js.map": "/ppm-midterm-frontend/static/js/main.db6d934b.js.map",
-    "453.38c8597c.chunk.js.map": "/ppm-midterm-frontend/static/js/453.38c8597c.chunk.js.map"
+    "main.70b9820e.css.map": "/ppm-midterm-frontend/static/css/main.70b9820e.css.map",
+    "main.8fe23f3d.js.map": "/ppm-midterm-frontend/static/js/main.8fe23f3d.js.map",
+    "453.5471eaac.chunk.js.map": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.583e1c72.css",
-    "static/js/main.db6d934b.js"
+    "static/css/main.70b9820e.css",
+    "static/js/main.8fe23f3d.js"
   ]
 }
