@@ -10,7 +10,7 @@ export function Card({title, body}:any) {
                 {title}
             </div>
             <div className={"img-container position-relative width-card rounded-3 d-flex justify-content-center"}>
-                <img alt="card illustration" className={"position-absolute top-0 z-0 rounded-3 width-card"} src={"https://placehold.co/230x400"}/>
+                <img alt="card illustration" className={"position-absolute top-0 z-0 rounded-3 width-card-img"} src={"https://placehold.co/275x460"}/>
                 <div className={"card-text position-absolute text-wrap text-truncate bottom-0 z-1 w-100 text-start"}>
                     {body}
                 </div>

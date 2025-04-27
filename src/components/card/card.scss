@@ -2,7 +2,11 @@
 
 .width-card {
   width: 280px;
-  height: 500px;
+  height: 460px;
+}
+.width-card-img {
+  width: 275px;
+  height: 460px;
 }
 
 .img-container {
@@ -20,7 +24,13 @@
 @media (max-width: 1539px) {
   .width-card {
     max-width: 280px;
-    max-height: 400px;
+    max-height: 460px;
+    height: auto;
+    width: auto;
+  }
+  .width-card-img {
+    max-width: 275px;
+    max-height: 460px;
     height: auto;
     width: auto;
   }
