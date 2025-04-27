@@ -13,27 +13,41 @@
   border-right: 1px solid lightgray;
 }
 
-.row-img {
-  max-width: 278px;
-  width: 100%;
+.carousel-img {
+  width: 278px;
   height: auto;
   max-height: 156px;
+}
+
+.carousel-body {
+ width: 278px;
 }
 
 
 @media (max-width: 767px) {
   .row-dis-wrapper {
     gap: 0;
-    padding: 5px 5px;
+    padding: 20px 8px;
     max-width: 100%;
   }
+
+  .carousel-img {
+    width: auto;
+    height: auto;
+    max-width: 70vw;
+    max-height: 30vh;
+    object-fit: contain;
+  }
+
+  .carousel-body {
+    width: auto;
+    max-width: 70vw;
+  }
+
   .divider {
     border-left: 0;
   }
   .divider-wrapper {
     scroll-snap-align: start;
-  }
-  .divider-wrapper-border {
-    border-bottom: 1px solid lightgray;
   }
 }

@@ -33,7 +33,7 @@
 
 }
 .nav-topics:hover {
-  color: $color-hover;
+  color: $blue-hover;
 }
 
 //--dropdown el
@@ -48,7 +48,6 @@
   width: var(--main-width);
   padding: 16px;
   border: 1px solid black;
-  margin-right: 1px;
 }
 
 .dropdown {
@@ -97,12 +96,12 @@
 }
 
 .dropdown-toggle:hover {
-  color: $color-hover;
+  color: $blue-hover;
   text-decoration: none;
   background-color: white;
 }
 .dropdown-toggle:active {
-  color: $color-hover;
+  color: $blue-hover;
   text-decoration: none;
   background-color: white;
 }

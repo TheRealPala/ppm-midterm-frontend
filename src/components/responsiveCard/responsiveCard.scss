@@ -1,4 +1,6 @@
-
+.responsive-card {
+  padding: 8px;
+}
 .res-card-dims {
   max-width: 290px;
   max-height: 516px;
@@ -26,8 +28,11 @@
 
   @media (max-width: 767px) {
     .res-card-dims {
-      max-width: 484px;
+      max-width: 80vw;
       max-height: 861px;
+    }
+    .responsive-card {
+      scroll-snap-align: start;
     }
   }
 }

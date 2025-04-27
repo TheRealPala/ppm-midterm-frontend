@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.blue-carousel {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  background-color: $background-blue;
+}
+
+@media (min-width: 1540px) {
+  .blue-carousel {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .blue-carousel {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #e9e9e9 transparent;
+    padding: 16px 8px;
+    justify-content: start;
+  }
+}
+

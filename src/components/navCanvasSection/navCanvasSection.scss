@@ -45,12 +45,12 @@
   bottom: 0;
   width: 0;
   height: 1px;
-  background: $color-hover;
+  background: $blue-hover;
   transition: width 0.15s ease;
   z-index: 2;
 }
 .animated-border:hover{
-  color: $color-hover;
+  color: $blue-hover;
 }
 .animated-border:hover::after {
   width: 100%;

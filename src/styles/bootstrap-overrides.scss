@@ -17,6 +17,7 @@
 .blink {
   animation: blink 2s infinite;
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -27,4 +28,14 @@
   100% {
     opacity: 1;
   }
+}
+
+.border-standard {
+  border: 1px solid black;
+  border-top: 0 !important;
+}
+
+.text-container-md {
+  font-size: 20px;
+  line-height: 24px;
 }

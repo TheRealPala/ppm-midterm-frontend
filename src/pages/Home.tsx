@@ -9,6 +9,8 @@ import {RowComposition} from "../components/rowCompsition/rowComposition";
 import {ColStaticDisplay} from "../components/colStaticDisplay/colStaticDisplay";
 import {Card} from "../components/card/card";
 import {ResponsiveCard} from "../components/responsiveCard/responsiveCard";
+import {RowCardCarousel} from "../components/rowCardCarousel/rowCardCarousel";
+import {BlueCarousel} from "../components/blueCarousel/blueCarousel";
 
 
 export function Home() {
@@ -55,7 +57,9 @@ export function Home() {
                             </div>
                         </>
                     } />
-                    <ResponsiveCard/>
+                    <RowCardCarousel />
+                    <div className={"w-full py-3 border-standard"} />
+                    <BlueCarousel />
                 </div>
             </div>
         </>
