@@ -1,7 +1,8 @@
 @import "src/styles/variables.scss";
+
 .width-card {
-  width:  299px;
-  height: 531px;
+  width: 280px;
+  height: 500px;
 }
 
 .img-container {
@@ -11,7 +12,16 @@
 .card-text {
   padding: 40px 16px 16px 16px;
 }
+
 .card-title {
   border-bottom: 4px $orange solid;
+}
 
+@media (max-width: 1539px) {
+  .width-card {
+    max-width: 280px;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+  }
 }

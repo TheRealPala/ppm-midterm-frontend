@@ -61,35 +61,38 @@ export function Home() {
                     <div className={"w-full py-3 border-standard"}/>
                     <BlueCarousel/>
 
-                    <ColumnsDivider
-                        left={
-                            <>
-                                <RowCardCarousel/>
-                                <RowCardCarousel/>
-                                <RowCardCarousel/>
-                                <RowCardCarousel/>
-                            </>
-                        }
-                        right={
-                            <>
-                                <div className={"sticky-col-el d-flex justify-content-center"}>
-                                    <Card/>
-                                </div>
-                            </>
-                        }
-                        ></ColumnsDivider>
-                    <div className="w-full d-flex">
-                        <div className={"col-12 col-md-9 h-100"}>
+                    <ColumnsDivider left={
+                        <>
                             <RowCardCarousel/>
                             <RowCardCarousel/>
                             <RowCardCarousel/>
                             <RowCardCarousel/>
+                        </>
+                    } right={
+                        <div className="sticky-col-el d-flex justify-content-center pb-4 border-bottom border-1 border-black">
+                            <Card title={"Lorem"} body={"PROVA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAA"}/>
                         </div>
-                        <div
-                            className={"col-3 d-none d-md-flex h-full border-end border-1 border-black position-relative "}>
-                            <Card/>
-                        </div>
-                    </div>
+                    }
+                    />
+
+                    <ColumnsDivider left={
+                        <>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                            <RowCardCarousel/>
+                        </>
+                    } right={
+                        <>
+                        <Card title={"Ipsum"}/>
+                        <Card title={"Ipsum"}/>
+                        <Card title={"Ipsum"}/>
+                        <Card title={"Ipsum"}/>
+                        <Card title={"Ipsum"}/>
+                        </>
+                    }
+                    />
+
                 </div>
             </div>
         </>
