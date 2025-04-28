@@ -1,0 +1,25 @@
+.add-cols-wrapper {
+  border-top: 1px solid lightgrey;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.adds-cols-div {
+  border-right: 1px solid lightgrey;
+}
+
+@media (max-width: 767px) {
+
+  .add-cols-wrapper {
+    border-top: 1px solid lightgrey;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .adds-cols-div {
+    border-bottom: 1px solid lightgrey;
+    border-right: 0;
+    padding: 16px 0;
+  }
+
+}

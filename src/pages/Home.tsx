@@ -11,6 +11,7 @@ import {RowCardCarousel} from "../components/rowCardCarousel/rowCardCarousel";
 import {BlueCarousel} from "../components/blueCarousel/blueCarousel";
 import {Card} from "../components/card/card";
 import {ColumnsDivider} from "../components/columnsDivider/columnsDivider";
+import AdditionalColumns from "../components/additionalColumns/additionalColumns";
 
 
 export function Home() {
@@ -63,14 +64,71 @@ export function Home() {
 
                     <ColumnsDivider left={
                         <>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
+                            <ColStaticDisplay body={
+                                <>
+                                    <div
+                                        className={"w-100 d-flex justify-content-center h6"}>
+                                        <span className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
+                                    </div>
+                                    <div className={"text-center"}>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
+                                    </div>
+                                </>
+                            }/>
+                            <ColStaticDisplay
+                                title={
+                                    <>
+                                        <text className={"h3 fw-semibold"}>Lorem <span className={"text-orange"}>50</span></text>
+                                    </>
+                                }
+
+                                body={
+                                    <>
+                                        <div
+                                            className={"w-100 d-flex justify-content-center h6"}>
+                                            <span className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
+                                        </div>
+                                        <div className={"text-center"}>
+                                            Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
+                                        </div>
+                                    </>
+                                }
+
+                                bottom={
+                                    <AdditionalColumns />
+                                }
+                            />
+                            <ColDisplay
+                                body={
+                                    <>
+                                        <div
+                                            className={"w-100 d-flex justify-content-md-start justify-content-center h6 text-danger"}>
+                                            <FontAwesomeIcon icon={faCircle} size={"xs"} className={"text-danger blink"}/>
+                                            <span className={"ms-2 sans-serif-font"}>LOREM IPSUM </span>
+                                        </div>
+                                        <div className={"text-md-start"}>
+                                            <span className={"text-danger"}>Lorem ipsum</span> dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy.
+                                        </div>
+                                    </>
+                                }
+                                bottom={<RowComposition length={3}/>}
+                            />
                         </>
                     } right={
                         <div className="sticky-col-el d-flex justify-content-center pb-4 border-bottom border-1 border-black">
-                            <Card title={"Lorem"} body={"PROVA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAA"}/>
+                            <Card title={"Lorem"} body={
+                                <>
+                                    <span className={"text-white h6 sans-serif-font"}>LOREM</span>
+                                    <div className={"w-100 text-start text-wrap serif-font orange-hover h3 text-white"}>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy.
+
+                                    </div>
+                                </>
+                            }/>
                         </div>
                     }
                     />

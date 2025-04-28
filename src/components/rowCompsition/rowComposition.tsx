@@ -3,8 +3,7 @@ import './rowComposition.scss';
 import {RowDisplay} from "../rowDisplay/rowDisplay";
 
 
-export function RowComposition() {
-    const length = 4;
+export function RowComposition({length = 4} ) {
     return (
         <div className={"d-flex flex-column align-items-center"}>
             <div className={"top-comp-divider mt-2"}></div>

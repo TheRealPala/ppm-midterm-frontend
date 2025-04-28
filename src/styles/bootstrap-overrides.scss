@@ -1,20 +1,26 @@
 @import "variables";
 @import "pages/home";
+
 .custom-width {
   width: var(--main-width);
 }
+
 .sans-serif-font {
-  font-family: 'Eugenio Sans Text', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: $font-sans-serif
 }
+
 .serif-font {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-serif
 }
+
 .text-orange {
   color: $orange;
 }
+
 .border-orange {
-    border-color: $orange;
+  border-color: $orange;
 }
+
 .blink {
   animation: blink 2s infinite;
 }
@@ -39,4 +45,16 @@
 .text-container-md {
   font-size: 20px;
   line-height: 24px;
+}
+
+.orange-hover:hover {
+  color: $orange !important;
+  cursor: pointer;
+}
+
+.text-author-style {
+  font-size: 14px;
+  color: grey;
+  font-family: $font-serif;
+  font-style: oblique;
 }
