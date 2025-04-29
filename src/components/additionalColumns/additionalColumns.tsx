@@ -12,8 +12,10 @@ export function additionalColumns({sport=false, hideSecondCol=false}) {
                     </div>
                     <div className={classNames(hideSecondCol ? "col-8 ps-3" : "col-6")}>
                         <text className={"serif-font text-wrap fw-semibold h5 pe-2 text-start"}>
-                            <span className={classNames( sport ? "sport-title" : "text-orange")}>Lorem</span> ipsum dolor sit amet,
+                            <span className={classNames( sport ? "sport-title" : "text-orange")}>Lorem</span>
+                            <span className={classNames( {'blue-text-hover' : sport})}> ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
+                            </span>
                             <br/>
                             <span className={"text-author-style fw-light"}>
                             lorem ipsum dolor
@@ -25,8 +27,10 @@ export function additionalColumns({sport=false, hideSecondCol=false}) {
                     !hideSecondCol &&
                     <div className={"col-md-4 col-12 d-flex align-items-start ps-md-3 pt-3 pt-md-0 h5"}>
                         <text className={"serif-font text-wrap fw-semibold"}>
-                            <span className={classNames( sport ? "sport-title" : "text-orange")}>Lorem</span> ipsum dolor sit amet, consetetur
-                            sadipscing elitr, sed diam nonumy.
+                            <span className={classNames(sport ? "sport-title" : "text-orange")}>Lorem</span>
+                            <span className={classNames({'blue-text-hover': sport})}> ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
+                            </span>
                         </text>
                     </div>
                 }

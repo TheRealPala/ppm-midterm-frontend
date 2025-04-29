@@ -100,8 +100,8 @@ export function Home() {
                                                     className={"ms-2 sans-serif-font color-dark-gray fw-semibold"}>{timeService.getDayString()}</span>
                                             </div>
                                             <div className={"text-center h2 fw-semibold"}>
-                                                Lorem ipsum dolor sit amet, consetetur <span
-                                                className={"color-dark-gray"}>| Lorem ipsum</span>
+                                                <span className={"blue-text-hover"}>Lorem ipsum dolor sit amet, consetetur</span>
+                                                <span className={"color-dark-gray"}> | Lorem ipsum</span>
                                             </div>
                                         </>
                                     }
@@ -116,7 +116,7 @@ export function Home() {
                                             <text className={"text-md-start h4 serif-font fw-semibold"}>
                                                 <span
                                                     className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
-                                                <span className={"sport-text"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
+                                                <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                                 <br/>
                                                 <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
                                             </text>
@@ -293,6 +293,18 @@ export function Home() {
                         </>
                     } right={
                         <>
+                            <div className={"px-2 mt-4"}>
+                                <BlueCarousel
+                                title={
+                                    <>
+                                        <section className={"w-100 text-center mb-3"}>
+                                            <text className={"fw-semibold serif-font h4 border-dark-blue-title"}>Lorem Ipsum</text>
+                                        </section>
+                                    </>
+                                }
+                                columns={true}
+                                />
+                            </div>
                         </>
                     }
                     />

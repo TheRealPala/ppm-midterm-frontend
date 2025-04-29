@@ -1,16 +1,23 @@
 
-.row-dis-wrapper {
+.row-dis-wrapper-row {
   gap: 20px;
   padding: 0 16px 24px 16px;
   width: auto;
 }
-
+.row-dis-wrapper-column {
+  padding: 8px;
+  width: auto;
+}
 .divider-wrapper {
   padding: 16px 0;
 }
 
-.divider {
-  border-right: 1px solid lightgray;
+.divider-row {
+  border-right: 1px solid gray;
+}
+
+.divider-column {
+  border-bottom: 1px solid gray;
 }
 
 .carousel-img {
