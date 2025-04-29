@@ -1,4 +1,4 @@
-.col-dis-wrapper {
+.col-static-dis-wrapper {
   padding: 16px;
   gap: 30px;
 }
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 767px) {
-  .col-dis-wrapper {
+  .col-static-dis-wrapper {
     padding: 16px 0;
   }
 

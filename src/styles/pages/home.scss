@@ -11,3 +11,11 @@
 .lightblue-col-dis {
   background-color: #E7F1FF;
 }
+
+.sport-text {
+  cursor: pointer;
+}
+
+.sport-text:hover {
+  color: $blue-hover !important;
+}

@@ -9,7 +9,7 @@ export function ColStaticDisplay({title, body, bottom}: any) {
             <div className={"d-flex align-items justify-content-center"}>
                 {title}
             </div>
-            <div className={"d-flex w-100 flex-column-reverse col-dis-wrapper"}>
+            <div className={"d-flex w-100 flex-column-reverse col-static-dis-wrapper"}>
                 <div
                     className="col-12text-wrap text-container text-center d-flex flex-column align-items-center justify-content-center">
                     {body}

@@ -112,15 +112,15 @@ export function Home() {
                                 additionalClasses="border-top-0 lightblue-col-dis py-3"
                                 body={
                                     <>
-                                        <div className={"h-100 d-flex align-items-start"}>
-                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1"}>
-                                                <span className={"text-orange"}>Lorem ipsum</span> dolor sit
-                                                amet, consetetur
-                                                sadipscing elitr, sed diam nonumy.
+                                        <div className={"h-100 d-flex flex-column justify-content-start"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold"}>
+                                                <span className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
+                                                <span className={"sport-text"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                             </text>
                                         </div>
                                     </>
                                 }
+                                bottom={<AdditionalColumns sport={true} hideSecondCol={true}/>}
                             />
 
                             <ColDisplay

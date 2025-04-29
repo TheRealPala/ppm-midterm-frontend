@@ -11,8 +11,8 @@ export function ColDisplay({additionalClasses, title, body, bottom}: any) {
                     className="col-12 col-md-6 text-wrap text-container text-center d-flex flex-column align-items-center justify-content-center">
                     {body}
                 </div>
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img className="col-img d-md-block d-none" src={"https://placehold.co/480x270"}/>
+                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center ms-2">
+                    <img className="col-img d-md-block d-none" src={"https://placehold.co/400x250"}/>
                     <img className="col-img d-md-none d-block" src={"https://placehold.co/767x767"}/>
                 </div>
             </div>
