@@ -12,6 +12,7 @@ import {BlueCarousel} from "../components/blueCarousel/blueCarousel";
 import {Card} from "../components/card/card";
 import {ColumnsDivider} from "../components/columnsDivider/columnsDivider";
 import AdditionalColumns from "../components/additionalColumns/additionalColumns";
+import timeService from "../services/timeService";
 
 
 export function Home() {
@@ -64,30 +65,13 @@ export function Home() {
 
                     <ColumnsDivider left={
                         <>
-                            <ColStaticDisplay body={
-                                <>
-                                    <div
-                                        className={"w-100 d-flex justify-content-center h6"}>
-                                        <span className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
-                                    </div>
-                                    <div className={"text-center"}>
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
-                                    </div>
-                                </>
-                            }/>
                             <ColStaticDisplay
-                                title={
-                                    <>
-                                        <text className={"h3 fw-semibold"}>Lorem <span className={"text-orange"}>50</span></text>
-                                    </>
-                                }
-
                                 body={
                                     <>
                                         <div
                                             className={"w-100 d-flex justify-content-center h6"}>
-                                            <span className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
+                                            <span
+                                                className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
                                         </div>
                                         <div className={"text-center"}>
                                             Lorem ipsum dolor sit amet, consetetur
@@ -95,22 +79,61 @@ export function Home() {
                                         </div>
                                     </>
                                 }
-
                                 bottom={
-                                    <AdditionalColumns />
+                                    <AdditionalColumns/>
                                 }
                             />
+                            <div className={"grey-col-dis"}>
+                                <ColStaticDisplay
+                                    title={
+                                        <>
+                                            <text className={"h3 fw-semibold"}>Lorem <span
+                                                className={"text-orange"}>50</span></text>
+                                        </>
+                                    }
+
+                                    body={
+                                        <>
+                                            <div
+                                                className={"w-100 d-flex justify-content-center h4"}>
+                                                <span
+                                                    className={"ms-2 sans-serif-font color-dark-gray fw-semibold"}>{timeService.getDayString()}</span>
+                                            </div>
+                                            <div className={"text-center h2 fw-semibold"}>
+                                                Lorem ipsum dolor sit amet, consetetur <span
+                                                className={"color-dark-gray"}>| Lorem ipsum</span>
+                                            </div>
+                                        </>
+                                    }
+                                />
+                            </div>
+
                             <ColDisplay
+                                additionalClasses="border-top-0 lightblue-col-dis py-3"
                                 body={
                                     <>
-                                        <div
-                                            className={"w-100 d-flex justify-content-md-start justify-content-center h6 text-danger"}>
-                                            <FontAwesomeIcon icon={faCircle} size={"xs"} className={"text-danger blink"}/>
-                                            <span className={"ms-2 sans-serif-font"}>LOREM IPSUM </span>
+                                        <div className={"h-100 d-flex align-items-start"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1"}>
+                                                <span className={"text-orange"}>Lorem ipsum</span> dolor sit
+                                                amet, consetetur
+                                                sadipscing elitr, sed diam nonumy.
+                                            </text>
                                         </div>
-                                        <div className={"text-md-start"}>
-                                            <span className={"text-danger"}>Lorem ipsum</span> dolor sit amet, consetetur
-                                            sadipscing elitr, sed diam nonumy.
+                                    </>
+                                }
+                            />
+
+                            <ColDisplay
+                                hideBorderTop={true}
+                                additionalClasses="border-top-0"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex align-items-start"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1"}>
+                                                <span className={"text-orange"}>Lorem ipsum</span> dolor sit
+                                                amet, consetetur
+                                                sadipscing elitr, sed diam nonumy.
+                                            </text>
                                         </div>
                                     </>
                                 }
@@ -118,7 +141,8 @@ export function Home() {
                             />
                         </>
                     } right={
-                        <div className="sticky-col-el d-flex justify-content-center pb-4 border-bottom border-1 border-black">
+                        <div
+                            className="sticky-col-el d-flex justify-content-center pb-4 border-bottom border-1 border-black">
                             <Card title={"Lorem"} body={
                                 <>
                                     <span className={"text-white h6 sans-serif-font"}>LOREM</span>
@@ -142,11 +166,11 @@ export function Home() {
                         </>
                     } right={
                         <>
-                        <Card title={"Ipsum"}/>
-                        <Card title={"Ipsum"}/>
-                        <Card title={"Ipsum"}/>
-                        <Card title={"Ipsum"}/>
-                        <Card title={"Ipsum"}/>
+                            <Card title={"Ipsum"}/>
+                            <Card title={"Ipsum"}/>
+                            <Card title={"Ipsum"}/>
+                            <Card title={"Ipsum"}/>
+                            <Card title={"Ipsum"}/>
                         </>
                     }
                     />
