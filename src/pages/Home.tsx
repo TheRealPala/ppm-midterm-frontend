@@ -114,8 +114,11 @@ export function Home() {
                                     <>
                                         <div className={"h-100 d-flex flex-column justify-content-start"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold"}>
-                                                <span className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
+                                                <span
+                                                    className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
                                                 <span className={"sport-text"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
+                                                <br/>
+                                                <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
                                             </text>
                                         </div>
                                     </>
@@ -128,12 +131,13 @@ export function Home() {
                                 additionalClasses="border-top-0"
                                 body={
                                     <>
-                                        <div className={"h-100 d-flex align-items-start"}>
+                                        <div className={"h-100 d-flex flex-column align-items-start"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold mt-1"}>
                                                 <span className={"text-orange"}>Lorem ipsum</span> dolor sit
                                                 amet, consetetur
                                                 sadipscing elitr, sed diam nonumy.
                                             </text>
+                                            <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
                                         </div>
                                     </>
                                 }
@@ -149,7 +153,8 @@ export function Home() {
                                     <div className={"w-100 text-start text-wrap serif-font orange-hover h3 text-white"}>
                                         Lorem ipsum dolor sit amet, consetetur
                                         sadipscing elitr, sed diam nonumy.
-
+                                        <br/>
+                                        <span className={"text-author-style"}>lorem ipsum</span>
                                     </div>
                                 </>
                             }/>
@@ -159,18 +164,135 @@ export function Home() {
 
                     <ColumnsDivider left={
                         <>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
-                            <RowCardCarousel/>
+                            <section className={"w-100 pt-2 pb-3 text-center border-standard"}>
+                                <text className={"fw-semibold serif-font h4 border-main-title "}>Lorem Ipsum</text>
+                            </section>
+                            {[...Array(2)].map((_, index) => (
+                                <ColDisplay
+                                    hideBorderTop={true}
+                                    additionalClasses="border-top-0 pt-2"
+                                    body={
+                                        <>
+                                            <div className={"h-100 d-flex align-items-start flex-column"}>
+                                                <text
+                                                    className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                    <span className={"h6"}><text
+                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                    <br/>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy
+                                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                    diam
+                                                    voluptua <br/>
+                                                    <span className={"text-author-style"}>lorem ipsum</span>
+                                                </text>
+                                            </div>
+                                        </>
+                                    }
+                                />
+                            ))}
+                            <ColDisplay
+                                hideBorderTop={true}
+                                additionalClasses="border-top-0 pt-2"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex align-items-start flex-column"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                <span className={"h6"}><text
+                                                    className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                <br/>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                voluptua <br/>
+                                                <span className={"text-author-style"}>lorem ipsum</span>
+                                            </text>
+                                        </div>
+                                    </>
+                                }
+                                bottom={<AdditionalColumns hideSecondCol={true}/>}
+                            />
+                            {[...Array(4)].map((_, index) => (
+                                <ColDisplay
+                                    hideBorderTop={true}
+                                    additionalClasses="border-top-0 pt-2"
+                                    body={
+                                        <>
+                                            <div className={"h-100 d-flex align-items-start flex-column"}>
+                                                <text
+                                                    className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                    <span className={"h6"}><text
+                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                    <br/>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy
+                                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                    diam
+                                                    voluptua <br/>
+                                                    <span className={"text-author-style"}>lorem ipsum</span>
+                                                </text>
+                                            </div>
+                                        </>
+                                    }
+                                />
+                            ))}
+                            <ColDisplay
+                                hideBorderTop={true}
+                                additionalClasses="border-top-0 pt-2"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex align-items-start flex-column"}>
+                                            <text
+                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                    <span className={"h6"}><text
+                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                <br/>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                nonumy
+                                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                diam
+                                                voluptua <br/>
+                                                <span className={"text-author-style"}>lorem ipsum</span>
+                                            </text>
+                                        </div>
+                                    </>
+                                }
+                                bottom={
+                                    <>
+                                        <RowComposition length={3}/>
+                                        <div className={"px-3 mb-3"}>
+                                            <section className={"w-100 comment p-2 position-relative"}>
+                                                Prova
+                                            </section>
+                                        </div>
+                                    </>
+                                }
+                            />
+                            <ColDisplay
+                                hideBorderTop={true}
+                                additionalClasses="border-top-0 pt-2"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex align-items-start flex-column"}>
+                                            <text
+                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                    <span className={"h6"}><text
+                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                <br/>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                nonumy
+                                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                diam
+                                                voluptua <br/>
+                                                <span className={"text-author-style"}>lorem ipsum</span>
+                                            </text>
+                                        </div>
+                                    </>
+                                }
+                                bottom={<AdditionalColumns/>}
+                            />
                         </>
                     } right={
                         <>
-                            <Card title={"Ipsum"}/>
-                            <Card title={"Ipsum"}/>
-                            <Card title={"Ipsum"}/>
-                            <Card title={"Ipsum"}/>
-                            <Card title={"Ipsum"}/>
                         </>
                     }
                     />

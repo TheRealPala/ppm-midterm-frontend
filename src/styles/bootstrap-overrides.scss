@@ -21,6 +21,10 @@
   border-color: $orange;
 }
 
+.border-main-title {
+  border-bottom: 4px $orange solid;
+}
+
 .blink {
   animation: blink 2s infinite;
 }

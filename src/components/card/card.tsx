@@ -6,7 +6,7 @@ export function Card({title, body}:any) {
 
     return (
         <div className={"d-flex flex-column align-items-center justify-content-between"}>
-            <div className={"serif-font card-title fw-semibold h3 mb-3 mt-1"}>
+            <div className={"serif-font border-main-title fw-semibold h3 mb-3 mt-1"}>
                 {title}
             </div>
             <div className={"img-container position-relative width-card rounded-3 d-flex justify-content-center"}>
