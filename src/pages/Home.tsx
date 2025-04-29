@@ -14,6 +14,8 @@ import {ColumnsDivider} from "../components/columnsDivider/columnsDivider";
 import AdditionalColumns from "../components/additionalColumns/additionalColumns";
 import timeService from "../services/timeService";
 import {SmallSideCard} from "../components/smallSideCard/smallSideCard";
+import {SideCardWrapper} from "../components/sideCardsWrapper/sideCardsWrapper";
+import {MediumSideCard} from "../components/mediumSideCard/mediumSideCard";
 
 
 export function Home() {
@@ -168,30 +170,6 @@ export function Home() {
                             <section className={"w-100 pt-2 pb-3 text-center border-standard"}>
                                 <text className={"fw-semibold serif-font h4 border-main-title "}>Lorem Ipsum</text>
                             </section>
-                            {[...Array(2)].map((_, index) => (
-                                <ColDisplay
-                                    hideBorderTop={true}
-                                    additionalClasses="border-top-0 pt-2"
-                                    body={
-                                        <>
-                                            <div className={"h-100 d-flex align-items-start flex-column"}>
-                                                <text
-                                                    className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
-                                                    <span className={"h6"}><text
-                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
-                                                    <br/>
-                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                                    nonumy
-                                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                                                    diam
-                                                    voluptua <br/>
-                                                    <span className={"text-author-style"}>lorem ipsum</span>
-                                                </text>
-                                            </div>
-                                        </>
-                                    }
-                                />
-                            ))}
                             <ColDisplay
                                 hideBorderTop={true}
                                 additionalClasses="border-top-0 pt-2"
@@ -262,7 +240,7 @@ export function Home() {
                                         <RowComposition length={3}/>
                                         <div className={"px-3 mb-3"}>
                                             <section className={"w-100 comment p-2 position-relative"}>
-                                                Prova
+                                                <MediumSideCard large={true} />
                                             </section>
                                         </div>
                                     </>
@@ -306,7 +284,24 @@ export function Home() {
                                 columns={true}
                                 />
                             </div>
-                            <SmallSideCard />
+                            <SideCardWrapper length={4} element={<SmallSideCard />}
+                                title = {
+                                    <>
+                                        <section className={"w-100 text-center mb-3 mt-5"}>
+                                            <text className={"fw-semibold serif-font h4 border-dark-blue-title"}>Lorem Ipsum</text>
+                                        </section>
+                                    </>
+                                }
+                            />
+                            <SideCardWrapper length={3} element={<MediumSideCard />}
+                                             title = {
+                                                 <>
+                                                     <section className={"w-100 text-center mb-3 mt-3"}>
+                                                         <text className={"fw-semibold serif-font h4 border-main-title"}>Lorem Ipsum</text>
+                                                     </section>
+                                                 </>
+                                             }
+                            />
                         </>
 
                     }
