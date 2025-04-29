@@ -13,6 +13,7 @@ import {Card} from "../components/card/card";
 import {ColumnsDivider} from "../components/columnsDivider/columnsDivider";
 import AdditionalColumns from "../components/additionalColumns/additionalColumns";
 import timeService from "../services/timeService";
+import {SmallSideCard} from "../components/smallSideCard/smallSideCard";
 
 
 export function Home() {
@@ -293,7 +294,7 @@ export function Home() {
                         </>
                     } right={
                         <>
-                            <div className={"px-2 mt-4"}>
+                            <div className={"px-2 mt-4 pb-3 border-bottom border-1 border-black"}>
                                 <BlueCarousel
                                 title={
                                     <>
@@ -305,7 +306,9 @@ export function Home() {
                                 columns={true}
                                 />
                             </div>
+                            <SmallSideCard />
                         </>
+
                     }
                     />
 

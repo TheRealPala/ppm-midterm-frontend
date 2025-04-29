@@ -1,0 +1,12 @@
+@import "src/styles/variables";
+.small-side-card {
+  background-color: $background-blue;
+}
+.small-side-card:hover {
+  background-color: #57697D;
+  cursor: pointer;
+}
+
+.card-author {
+  font-size: 12px;
+}

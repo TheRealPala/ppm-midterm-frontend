@@ -17,6 +17,16 @@
   color: $orange;
 }
 
+.text-light-orange {
+  color: $light-orange;
+}
+
+.light-orange-hover:hover {
+  cursor: pointer;
+  color: $light-orange;
+  ;
+}
+
 .border-orange {
   border-color: $orange;
 }
