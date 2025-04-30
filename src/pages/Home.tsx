@@ -16,6 +16,8 @@ import timeService from "../services/timeService";
 import {SmallSideCard} from "../components/smallSideCard/smallSideCard";
 import {SideCardWrapper} from "../components/sideCardsWrapper/sideCardsWrapper";
 import {MediumSideCard} from "../components/mediumSideCard/mediumSideCard";
+import {SideImgBanner} from "../components/sideImgBanner/sideImgBanner";
+import {SideBannerWrapper} from "../components/sideBannerWrapper/sideBannerWrapper";
 
 
 export function Home() {
@@ -302,8 +304,8 @@ export function Home() {
                                                  </>
                                              }
                             />
+                            <SideBannerWrapper />
                         </>
-
                     }
                     />
 
