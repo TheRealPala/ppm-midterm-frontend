@@ -38,6 +38,10 @@
 .border-dark-blue-title {
   border-bottom: 4px $background-blue solid;
 }
+
+.text-dark-blue {
+  color: $background-blue;
+}
 .blink {
   animation: blink 2s infinite;
 }
@@ -80,8 +84,20 @@
   color: $dark-gray;
 }
 
+.color-text-gray {
+  color: $text-gray !important;
+}
+
+.border-text-gray-title {
+  border-bottom: 4px solid $text-gray;
+}
+
 .sport-title {
   color: $sport-title-color !important;
+}
+
+.border-sport-title {
+  border-bottom: 4px solid $sport-title-color;
 }
 
 .blue-text-hover {

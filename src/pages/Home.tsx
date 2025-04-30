@@ -16,8 +16,8 @@ import timeService from "../services/timeService";
 import {SmallSideCard} from "../components/smallSideCard/smallSideCard";
 import {SideCardWrapper} from "../components/sideCardsWrapper/sideCardsWrapper";
 import {MediumSideCard} from "../components/mediumSideCard/mediumSideCard";
-import {SideImgBanner} from "../components/sideImgBanner/sideImgBanner";
 import {SideBannerWrapper} from "../components/sideBannerWrapper/sideBannerWrapper";
+import {SideDisplay} from "../components/sideDisplay/sideDisplay";
 
 
 export function Home() {
@@ -85,7 +85,7 @@ export function Home() {
                                     </>
                                 }
                                 bottom={
-                                    <AdditionalColumns/>
+                                    <AdditionalColumns standard={true}/>
                                 }
                             />
                             <div className={"grey-col-dis"}>
@@ -190,7 +190,7 @@ export function Home() {
                                         </div>
                                     </>
                                 }
-                                bottom={<AdditionalColumns hideSecondCol={true}/>}
+                                bottom={<AdditionalColumns standard={true} hideSecondCol={true}/>}
                             />
                             {[...Array(4)].map((_, index) => (
                                 <ColDisplay
@@ -269,7 +269,50 @@ export function Home() {
                                         </div>
                                     </>
                                 }
-                                bottom={<AdditionalColumns/>}
+                                bottom={<AdditionalColumns standard={true}/>}
+                            />
+                            <ColDisplay
+                                title={
+                                    <section className={"w-100 pt-2 pb-1 text-center"}>
+                                        <text className={"fw-semibold serif-font h4 border-text-gray-title "}>Lorem Ipsum</text>
+                                    </section>
+                                }
+                                additionalClasses="border-top-0 grey-col-dis py-3"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex flex-column justify-content-start"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold"}>
+                                                <span className={"sans-serif-font h6 fw-semibold color-text-gray"}>LOREM <br/> </span>
+                                                <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
+                                                <br/>
+                                                <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
+                                            </text>
+                                        </div>
+                                    </>
+                                }
+                                bottom={<AdditionalColumns grey={true} hideSecondCol={false}/>}
+                            />
+
+                            <ColDisplay
+                                title={
+                                    <section className={"w-100 pt-2 pb-1 text-center"}>
+                                        <text className={"fw-semibold serif-font h4 border-sport-title "}>Lorem</text>
+                                    </section>
+                                }
+                                additionalClasses="border-top-0 lightblue-col-dis py-3"
+                                body={
+                                    <>
+                                        <div className={"h-100 d-flex flex-column justify-content-start"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold"}>
+                                                <span className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
+                                                <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
+                                                <br/>
+                                                <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
+                                            </text>
+                                        </div>
+                                    </>
+                                }
+                                bottom={<AdditionalColumns sport={true} hideSecondCol={false}/>}
                             />
                         </>
                     } right={
@@ -305,6 +348,32 @@ export function Home() {
                                              }
                             />
                             <SideBannerWrapper />
+                            <div className={"d-flex border-1 border-bottom border-black p-2 pt-4"}>
+                                <div className={"col-6 h-div d-flex flex-column h5 align-items-center "}>
+                                    <img src={"https://placehold.co/133x75"}/>
+                                    <span className={"h6 mb-0"}>
+                                        <text className={"text-orange sans-serif-font fw-semibold"}>
+                                            Lorem ipsum
+                                        </text>
+                                    </span>
+                                    <text className={"text-center h5 serif-font fw-semibold"}>
+                                        Lorem ipsum dolor sit
+                                    </text>
+                                </div>
+                                <div className={"col-6 d-flex flex-column h5 align-items-center "}>
+                                    <img src={"https://placehold.co/133x75"}/>
+                                    <span className={"h6 mb-0"}>
+                                        <text className={"text-orange sans-serif-font fw-semibold"}>
+                                            Lorem ipsum
+                                        </text>
+                                    </span>
+                                    <text className={"text-center h5 serif-font fw-semibold"}>
+                                        Lorem ipsum dolor sit
+                                    </text>
+                                </div>
+                            </div>
+                            <SideDisplay title={"LOREM IPSUM"} text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"}/>
+                            <SideDisplay additionalClasses={"mt-4 mb-4 gray-bg"}  text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"}/>
                         </>
                     }
                     />

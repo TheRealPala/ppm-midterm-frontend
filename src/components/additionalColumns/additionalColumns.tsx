@@ -2,7 +2,7 @@ import React from 'react';
 import './additionalColumns.scss'
 import classNames from "classnames";
 
-export function additionalColumns({sport=false, hideSecondCol=false}) {
+export function additionalColumns({standard=false, sport=false, grey=false, hideSecondCol=false}) {
     return (
         <div className={"w-full px-4"}>
             <div className={"add-cols-wrapper d-flex flex-column flex-md-row w-100 py-3"}>
@@ -12,8 +12,8 @@ export function additionalColumns({sport=false, hideSecondCol=false}) {
                     </div>
                     <div className={classNames(hideSecondCol ? "col-8 ps-3" : "col-6")}>
                         <text className={"serif-font text-wrap fw-semibold h5 pe-2 text-start"}>
-                            <span className={classNames( sport ? "sport-title" : "text-orange")}>Lorem</span>
-                            <span className={classNames( {'blue-text-hover' : sport})}> ipsum dolor sit amet,
+                            <span className={classNames( {'text-orange' : standard}, { "sport-title" : sport }, {'color-text-gray': grey})}>Lorem</span>
+                            <span className={classNames( {'blue-text-hover' : sport || grey})}> ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
                             </span>
                             <br/>
@@ -27,8 +27,8 @@ export function additionalColumns({sport=false, hideSecondCol=false}) {
                     !hideSecondCol &&
                     <div className={"col-md-4 col-12 d-flex align-items-start ps-md-3 pt-3 pt-md-0 h5"}>
                         <text className={"serif-font text-wrap fw-semibold"}>
-                            <span className={classNames(sport ? "sport-title" : "text-orange")}>Lorem</span>
-                            <span className={classNames({'blue-text-hover': sport})}> ipsum dolor sit amet,
+                            <span className={classNames({'text-orange' : standard}, { "sport-title" : sport }, {'color-text-gray': grey})}>Lorem</span>
+                            <span className={classNames({'blue-text-hover': sport || grey})}> ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
                             </span>
                         </text>

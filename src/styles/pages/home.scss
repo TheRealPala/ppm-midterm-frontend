@@ -1,3 +1,4 @@
+@import "../variables";
 .sticky-col-el {
   position: sticky;
   z-index: 1;
@@ -5,10 +6,12 @@
 }
 
 .grey-col-dis {
-  background-color: #E9E9E9;
+  background-color: $card-gray;
 }
 
 .lightblue-col-dis {
   background-color: #E7F1FF;
 }
-
+.h-div {
+  border-right: 1px solid lightgrey;
+}
