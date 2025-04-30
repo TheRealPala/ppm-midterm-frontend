@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ppm-midterm-frontend/static/css/main.473e02a8.css",
-    "main.js": "/ppm-midterm-frontend/static/js/main.6ff52d01.js",
+    "main.css": "/ppm-midterm-frontend/static/css/main.09d05a6e.css",
+    "main.js": "/ppm-midterm-frontend/static/js/main.dfd74868.js",
     "static/js/453.5471eaac.chunk.js": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js",
     "index.html": "/ppm-midterm-frontend/index.html",
-    "main.473e02a8.css.map": "/ppm-midterm-frontend/static/css/main.473e02a8.css.map",
-    "main.6ff52d01.js.map": "/ppm-midterm-frontend/static/js/main.6ff52d01.js.map",
+    "main.09d05a6e.css.map": "/ppm-midterm-frontend/static/css/main.09d05a6e.css.map",
+    "main.dfd74868.js.map": "/ppm-midterm-frontend/static/js/main.dfd74868.js.map",
     "453.5471eaac.chunk.js.map": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.473e02a8.css",
-    "static/js/main.6ff52d01.js"
+    "static/css/main.09d05a6e.css",
+    "static/js/main.dfd74868.js"
   ]
 }
