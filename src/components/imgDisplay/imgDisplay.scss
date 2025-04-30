@@ -5,6 +5,11 @@
 .img-display-text {
   background-color: $body-bg;
   width: 80%;
+  container-type: inline-size;
+}
+
+.text-size-dynamic {
+  font-size: 7cqw;
 }
 
 .img-display-fluid {

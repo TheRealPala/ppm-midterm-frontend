@@ -20,6 +20,7 @@ import {SideBannerWrapper} from "../components/sideBannerWrapper/sideBannerWrapp
 import {SideDisplay} from "../components/sideDisplay/sideDisplay";
 import {GridComposition} from "../components/gridComposition/gridComposition";
 import {ImgDisplay} from "../components/imgDisplay/imgDisplay";
+import ImgDisplayWrapper from "../components/imgDisplayWrapper/imgDisplayWrapper";
 
 
 export function Home() {
@@ -316,15 +317,7 @@ export function Home() {
                                 }
                                 bottom={<GridComposition />}
                             />
-                            <div className={"row p-3 "}>
-                                <div className={"col-6"}>
-                                    <ImgDisplay />
-                                </div>
-                                <div className={"col-6"}>
-                                    <ImgDisplay />
-                                </div>
-                            </div>
-
+                            <ImgDisplayWrapper />
                         </>
                     } right={
                         <>
