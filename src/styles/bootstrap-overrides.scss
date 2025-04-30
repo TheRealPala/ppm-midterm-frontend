@@ -42,6 +42,9 @@
 .text-dark-blue {
   color: $background-blue;
 }
+.bg-card-gray {
+  background-color: $card-gray;
+}
 .blink {
   animation: blink 2s infinite;
 }
@@ -112,6 +115,7 @@
   border-radius: 0 4px 4px 4px;
   background-color: #e9e9e9;
 }
+
 .comment::before {
   content: "";
   position: absolute;
