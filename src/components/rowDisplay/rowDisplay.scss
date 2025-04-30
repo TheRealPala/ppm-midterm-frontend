@@ -23,17 +23,21 @@
 
 
 @media (max-width: 767px) {
+
   .row-dis-wrapper {
     gap: 0;
     padding: 5px 5px;
     max-width: 100%;
   }
+
   .divider {
-    border-left: 0;
+    border-right: 0;
   }
+
   .divider-wrapper {
     scroll-snap-align: start;
   }
+
   .divider-wrapper-border {
     border-bottom: 1px solid lightgray;
   }

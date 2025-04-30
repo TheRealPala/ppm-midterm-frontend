@@ -18,6 +18,7 @@ import {SideCardWrapper} from "../components/sideCardsWrapper/sideCardsWrapper";
 import {MediumSideCard} from "../components/mediumSideCard/mediumSideCard";
 import {SideBannerWrapper} from "../components/sideBannerWrapper/sideBannerWrapper";
 import {SideDisplay} from "../components/sideDisplay/sideDisplay";
+import {GridComposition} from "../components/gridComposition/gridComposition";
 
 
 export function Home() {
@@ -293,26 +294,26 @@ export function Home() {
                                 bottom={<AdditionalColumns grey={true} hideSecondCol={false}/>}
                             />
 
-                            <ColDisplay
+                            <ColStaticDisplay
                                 title={
                                     <section className={"w-100 pt-2 pb-1 text-center"}>
                                         <text className={"fw-semibold serif-font h4 border-sport-title "}>Lorem</text>
                                     </section>
                                 }
-                                additionalClasses="border-top-0 lightblue-col-dis py-3"
+                                additionalClasses="lightblue-col-dis"
                                 body={
                                     <>
-                                        <div className={"h-100 d-flex flex-column justify-content-start"}>
-                                            <text className={"text-md-start h4 serif-font fw-semibold"}>
+                                        <div className={"h-100 d-flex flex-column justify-content-center"}>
+                                            <text className={"text-center h4 serif-font fw-semibold"}>
                                                 <span className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
                                                 <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                                 <br/>
-                                                <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
+                                                <span className={"text-author-style w-100 text-center"}>lorem ipsum</span>
                                             </text>
                                         </div>
                                     </>
                                 }
-                                bottom={<AdditionalColumns sport={true} hideSecondCol={false}/>}
+                                bottom={<GridComposition />}
                             />
                         </>
                     } right={
@@ -339,13 +340,13 @@ export function Home() {
                                 }
                             />
                             <SideCardWrapper length={3} element={<MediumSideCard />}
-                                             title = {
-                                                 <>
-                                                     <section className={"w-100 text-center mb-3 mt-3"}>
-                                                         <text className={"fw-semibold serif-font h4 border-main-title"}>Lorem Ipsum</text>
-                                                     </section>
-                                                 </>
-                                             }
+                                 title = {
+                                     <>
+                                         <section className={"w-100 text-center mb-3 mt-3"}>
+                                             <text className={"fw-semibold serif-font h4 border-main-title"}>Lorem Ipsum</text>
+                                         </section>
+                                     </>
+                                 }
                             />
                             <SideBannerWrapper />
                             <div className={"d-flex border-1 border-bottom border-black p-2 pt-4"}>
