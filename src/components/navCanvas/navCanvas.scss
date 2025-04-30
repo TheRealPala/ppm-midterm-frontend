@@ -70,7 +70,10 @@
 .canvas-bottom{
   display: flex;
   border-top: 1px solid black;
-  height: 7vh;
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  background-color: $body-bg;
 }
 
 .canvas-bottom div:hover {

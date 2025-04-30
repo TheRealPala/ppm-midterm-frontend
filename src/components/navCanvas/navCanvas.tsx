@@ -21,7 +21,7 @@ export function NavCanvas({show, setShow}: NavCanvasProps) {
             aria-labelledby={'offcanvasNavbar'}
             show={show} onHide={handleClose}
         >
-            <div className="h-100 w-100 relative">
+            <div className="h-100 w-100 position-relative">
                 <Offcanvas.Header>
                     <div className="w-100 d-flex align-content-center">
                         <img alt={"logo"} className="me-auto" src={"https://placehold.co/40x60"} />
