@@ -13,11 +13,11 @@
 }
 
 .divider-row {
-  border-right: 1px solid gray;
+  border-right: 1px solid lightgrey;
 }
 
 .divider-column {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgrey;
 }
 
 .carousel-img {
@@ -49,6 +49,7 @@
 
   .carousel-body {
     width: auto;
+    min-width: 278px;
     max-width: 70vw;
   }
 

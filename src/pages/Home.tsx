@@ -1,3 +1,4 @@
+import {useIsMobile} from "../services/mobileService";
 import {CustomNavbar} from "../components/navbar/navbar";
 import {NavBanner} from "../components/navBanner/navBanner";
 import {Logo} from "../components/logo/logo";
@@ -19,8 +20,9 @@ import {MediumSideCard} from "../components/mediumSideCard/mediumSideCard";
 import {SideBannerWrapper} from "../components/sideBannerWrapper/sideBannerWrapper";
 import {SideDisplay} from "../components/sideDisplay/sideDisplay";
 import {GridComposition} from "../components/gridComposition/gridComposition";
-import {ImgDisplay} from "../components/imgDisplay/imgDisplay";
 import ImgDisplayWrapper from "../components/imgDisplayWrapper/imgDisplayWrapper";
+import {ColsWrapper} from "../components/colsWrapper/colsWrapper";
+import {TextCarousel} from "../components/textCarousel/textCarousel";
 
 
 export function Home() {
@@ -69,7 +71,7 @@ export function Home() {
                     }/>
                     <RowCardCarousel/>
                     <div className={"w-full py-3 border-standard"}/>
-                    <BlueCarousel/>
+                    <BlueCarousel />
 
                     <ColumnsDivider left={
                         <>
@@ -315,7 +317,7 @@ export function Home() {
                                         </div>
                                     </>
                                 }
-                                bottom={<GridComposition />}
+                                bottom={<GridComposition sport={true}/>}
                             />
                             <ImgDisplayWrapper />
                         </>
@@ -380,6 +382,53 @@ export function Home() {
                             <SideDisplay additionalClasses={"mt-4 mb-4 gray-bg"}  text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"}/>
                         </>
                     }
+                    />
+
+                    <ColsWrapper
+                        title={"Lorem"}
+                        firstCol={
+                            <ColStaticDisplay
+                                additionalClasses="border-0"
+                                body={
+                                    <>
+                                        <div className={"text-center h2 fw-semibold text-wrap"}>
+                                            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+                                            <br />
+                                            <span className={"text-author-style"}> lorem ipsum dolor</span>
+                                        </div>
+
+                                    </>
+                                }
+                            />
+                        }
+                        secondCol={
+                            <GridComposition rows={2} cols={2} hideFistDivider={true}/>
+                        }
+                    />
+
+                    <ColsWrapper
+                        title={"Lorem"}
+                        firstCol={
+                            <TextCarousel length={3} />
+                        }
+                        secondCol={
+                            <ColStaticDisplay
+                                additionalClasses="border-0"
+                                body={
+                                    <>
+                                        <div className={"text-center h2 fw-semibold text-wrap"}>
+                                            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+                                            <br />
+                                            <span className={"text-author-style"}> lorem ipsum dolor</span>
+                                        </div>
+
+                                    </>
+                                }
+                            />
+                        }
+                        thirdCol={
+                            <GridComposition rows={4} cols={1} hideFistDivider={true} hideAllPics={true} />
+                        }
                     />
 
                 </div>
