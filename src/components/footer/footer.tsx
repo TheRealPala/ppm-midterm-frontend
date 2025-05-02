@@ -2,16 +2,15 @@ import React, { FC } from 'react';
 import './footer.scss';
 import {faFacebook, faInstagram, faTiktok, faXTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
 interface footerProps {}
-
+const footerBottomItems = require('./footerBottom.json')['footerBottomItems'];
 const Footer: FC<footerProps> = () => (
   <div className="border-top border-1 border-black w-100 d-flex flex-column align-items-center justify-content-center position-relative">
       <section className={"custom-width px-2 d-flex flex-md-row flex-column"}>
           <div className={"col-md-3 col-12 footer-divider d-flex flex-column align-items-md-end align-items-center pe-md-5 pt-4"}>
               <div className={"d-flex flex-column mb-3 w-100"}>
-                  <img alt={"logo"} className={"mb-4"} src={"https://placehold.co/188x35"}/>
-                  <text className={"w-100 text-md-start text-center lh-lg footer-text border-bottom-light-gray pb-2"}>
+                  <img alt={"logo"} className={"mb-3"} src={"https://placehold.co/188x35"}/>
+                  <text className={"w-100 text-md-start text-center lh-lg footer-text-sm border-bottom-light-gray pb-2"}>
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum dolor</span> <br/>
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum dolor</span> <br/>
                       <span className={"color-text-gray  blue-text-hover"}>Lorem ipsum dolor</span> <br/>
@@ -80,16 +79,10 @@ const Footer: FC<footerProps> = () => (
           </div>
       </section>
       <div className={"w-100 p-2 footer-end z-3 d-flex justify-content-center"}>
-          <div className={"custom-width d-flex gap-3 footer-text"}>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
-              <span>lorem</span>
+          <div className={"custom-width d-flex gap-3 footer-text-sm align-items-center justify-content-center"}>
+              {footerBottomItems.map((item:string) => (
+                      <span className={"color-text-gray blue-text-hover"}>{item}</span>
+              ))}
           </div>
       </div>
   </div>
