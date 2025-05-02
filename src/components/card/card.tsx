@@ -5,7 +5,7 @@ import './card.scss';
 export function Card({title, body}:any) {
 
     return (
-        <div className={"d-flex flex-column align-items-center justify-content-between"}>
+        <div className={"d-flex flex-column align-items-center justify-content-between card-container"}>
             <div className={"serif-font border-main-title fw-semibold h3 mb-3 mt-1"}>
                 {title}
             </div>

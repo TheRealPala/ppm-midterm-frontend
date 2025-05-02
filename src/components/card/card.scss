@@ -1,5 +1,8 @@
 @import "src/styles/variables.scss";
 
+.card-container {
+  container-type: inline-size ;
+}
 .width-card {
   width: 280px;
   height: 460px;
@@ -20,14 +23,31 @@
 
 @media (max-width: 1539px) {
   .width-card {
-    max-width: 280px;
+    max-width: 235px;
+    max-height: 393px;
+    height: 393px;
+    width: 235px;
+  }
+
+  .width-card-img {
+    max-width: 235px;
     max-height: 460px;
     height: auto;
     width: auto;
   }
+}
+
+@media (max-width: 950px) {
+  .width-card {
+    max-width: 190px;
+    max-height: 317px;
+    height: 317px;
+    width: 180px;
+  }
+
   .width-card-img {
-    max-width: 275px;
-    max-height: 460px;
+    max-width: 190px;
+    max-height: 317px;
     height: auto;
     width: auto;
   }
