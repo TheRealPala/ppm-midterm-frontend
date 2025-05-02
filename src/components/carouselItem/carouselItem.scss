@@ -21,14 +21,16 @@
 }
 
 .carousel-img {
-  width: 278px;
+  max-width: 278px;
+  width: auto;
   height: auto;
   max-height: 156px;
   cursor: pointer;
 }
 
 .carousel-body {
- width: 278px;
+  max-width: 278px;
+  width: auto;
 }
 
 
