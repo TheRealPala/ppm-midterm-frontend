@@ -24,6 +24,7 @@ import ImgDisplayWrapper from "../components/imgDisplayWrapper/imgDisplayWrapper
 import {ColsWrapper} from "../components/colsWrapper/colsWrapper";
 import {TextCarousel} from "../components/textCarousel/textCarousel";
 import {BottomWidgets} from "../components/bottomWidgets/bottomWidgets";
+import Footer from "../components/footer/footer";
 
 
 export function Home() {
@@ -434,6 +435,7 @@ export function Home() {
                     <BottomWidgets />
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

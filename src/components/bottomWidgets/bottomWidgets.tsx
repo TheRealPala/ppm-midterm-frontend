@@ -118,7 +118,7 @@ const WordsSection = () => (
 
 export function BottomWidgets() {
     return (
-        <div className="border-standard p-md-4 py-3 px-sm-1">
+        <div className="border-standard border-bottom-0 p-md-4 py-3 px-sm-1">
             <WeatherGames/>
             <Horoscope/>
             <WordsSection/>

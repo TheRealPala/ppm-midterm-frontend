@@ -1,1 +1,56 @@
-.footer {}
+@import "../../styles/variables.scss";
+.footer-text {
+  font-size: 14px;
+}
+
+.border-bottom-light-gray {
+  border-bottom: 1px solid lightgray;
+}
+.border-top-light-gray {
+  border-top: 1px solid lightgray;
+}
+.border-left-light-gray {
+  border-left: 1px solid lightgray;
+}
+.border-right-light-gray {
+  border-right: 1px solid lightgray;
+}
+.footer-divider {
+  border-right: 1px solid black;
+}
+.footer-subscribe-button {
+  background-color: $blue-hover;
+  color: white;
+  border-radius: 0;
+}
+.footer-subscribe-button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.footer-end {
+  background-color: $card-gray ;
+}
+.flex-col-wrap {
+  flex-flow: column wrap;
+  gap: 30px;
+  max-height: 500px;
+}
+.footer-app-divider {
+  border-bottom: 1px solid lightgray;
+}
+
+@media (max-width: 767px) {
+  .flex-col-wrap {
+    flex-flow: row wrap;
+    gap: 0;
+    max-height: 600px;
+  }
+  .footer-divider {
+    border-right: 0;
+    border-bottom: 1px solid lightgrey;
+  }
+  .footer-app-divider {
+    border-bottom: 0;
+  }
+}
