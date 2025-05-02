@@ -23,6 +23,7 @@ import {GridComposition} from "../components/gridComposition/gridComposition";
 import ImgDisplayWrapper from "../components/imgDisplayWrapper/imgDisplayWrapper";
 import {ColsWrapper} from "../components/colsWrapper/colsWrapper";
 import {TextCarousel} from "../components/textCarousel/textCarousel";
+import {BottomWidgets} from "../components/bottomWidgets/bottomWidgets";
 
 
 export function Home() {
@@ -430,7 +431,7 @@ export function Home() {
                             <GridComposition rows={4} cols={1} hideFistDivider={true} hideAllPics={true} />
                         }
                     />
-
+                    <BottomWidgets />
                 </div>
             </div>
         </>

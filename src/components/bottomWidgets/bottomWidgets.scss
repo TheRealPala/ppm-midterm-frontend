@@ -1,0 +1,63 @@
+.wg-wrapper {
+  border-bottom: 1px solid lightgrey;
+}
+.w-top-button {
+  color: white;
+  background-color: #454545;
+  cursor: pointer;
+}
+.w-header {
+  font-size: 14px;
+}
+.w-top-button:hover {
+  background-color: #087BBA;
+}
+
+.w-row {
+  cursor: pointer;
+  flex-direction: row;
+}
+
+.wg-border-top {
+  border-top: 1px solid lightgrey;
+}
+
+.wg-border-right {
+  border-right: 1px solid lightgrey;
+}
+
+.wg-border-left {
+  border-left: 1px solid lightgrey;
+}
+
+.wg-border-bottom {
+  border-bottom: 1px solid lightgrey;
+}
+.w-temp {
+  font-size: 78px;
+}
+.w-text {
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .wg-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 467px) {
+  .w-row{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wg-border-right {
+    border-right: none;
+  }
+
+  .w-top-list {
+    padding-top:16px;
+    border-top: 1px solid lightgrey;
+  }
+}

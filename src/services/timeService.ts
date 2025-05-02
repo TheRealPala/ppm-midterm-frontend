@@ -7,6 +7,10 @@ const timeService = {
         return now.format('D MMMM YYYY');
     },
 
+    getDayStringShort() {
+        return now.format('DD/MM/YYYY');
+    },
+
     getHourString() {
         return now.format('HH:mm');
     },
