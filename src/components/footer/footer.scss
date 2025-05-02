@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+
 .footer-text {
   font-size: 14px;
 }
@@ -34,6 +35,7 @@
 .footer-end {
   background-color: $card-gray ;
 }
+
 .flex-col-wrap {
   flex-flow: column wrap;
   gap: 30px;
