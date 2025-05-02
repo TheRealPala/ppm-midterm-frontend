@@ -73,8 +73,8 @@ const Horoscope = () => (
 )
 
 const WordsSection = () => (
-    <div className={"wg-wrapper pb-5 d-flex justify-content-center align-items-md-start align-items-center flex-md-row flex-column me-3 ps-2"}>
-        <div className={"col-md-6 col-12 d-flex flex-column me-2 wg-border-top"}>
+    <div className={"wg-wrapper pb-5 d-flex justify-content-center align-items-md-start align-items-center flex-md-row flex-column me-md-3 ps-md-2"}>
+        <div className={"col-md-6 col-12 d-flex flex-column me-md-2 wg-border-top"}>
             <div className={"d-flex justify-content-between p-2 pt-2 mb-3 fs-6"}>
                 <span className={"py-1 fw-semibold"}>LOREM</span>
             </div>
@@ -89,10 +89,10 @@ const WordsSection = () => (
             </div>
         </div>
 
-        <div className={"col-md-6 col-12 d-flex flex-column ms-3 wg-border-top wg-border-right wg-border-bottom wg-border-left"}>
+        <div className={"col-md-6 col-12 d-flex flex-column ms-md-3 wg-border-top wg-border-right wg-border-bottom wg-border-left"}>
             <span className={"w-full text-center py-2 fs-5"}><span className={"text-danger"}>LO</span>REM<span className={"text-danger"}>IPSUM</span></span>
             <div className={"overflow-x-hidden position-relative"}>
-                <img src={"https://placehold.co/800x176"} alt={"background-img"} className={"img-fluid"}/>
+                <img src={"https://placehold.co/800x176"} alt={"background-img"} className={"img-book-banner"}/>
                 <div className={"position-absolute bottom-0 w-font ps-3"}>
                     <span className={"text-white bg-danger p-1 w-auto"}>LOREM</span> <br />
                     <span className={"fw-semibold text-white"}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </span>
@@ -118,7 +118,7 @@ const WordsSection = () => (
 
 export function BottomWidgets() {
     return (
-        <div className="border-standard p-sm-4 py-3 px-1">
+        <div className="border-standard p-md-4 py-3 px-1">
             <WeatherGames/>
             <Horoscope/>
             <WordsSection/>

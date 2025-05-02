@@ -32,7 +32,7 @@ export function Home() {
             <CustomNavbar/>
             <NavBanner/>
             <Logo/>
-            <div className={"w-100 d-flex flex-column align-items-center justify-content-center"}>
+            <div className={"w-100 d-flex flex-column align-items-center justify-content-center overflow-x-hidden overflow-y-hidden"}>
                 <NavDropdowns/>
                 <div className={"custom-width"}>
                     <ColDisplay
