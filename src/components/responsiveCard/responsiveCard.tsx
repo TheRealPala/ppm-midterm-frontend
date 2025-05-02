@@ -10,10 +10,10 @@ export function ResponsiveCard() {
             <img alt="card illustration" className={"res-card-dims res-card-img d-inline d-md-none"}
                  src={"https://placehold.co/484x861"}/>
             <div className={"text-start res-card-dims serif-font d-flex flex-column"}>
-                <span className={"fw-semibold text-wrap text-start res-card-line-height mb-0 res-card-text"}>
+                <h2 className={"fw-semibold text-wrap text-start res-card-line-height mb-0 res-card-text"}>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-                </span>
-                <span className={" text-wrap text-start h6 res-card-line-height"}>
+                </h2>
+                <span className={"text-wrap text-start fs-6 res-card-line-height"}>
                     Lorem ipsum
                 </span>
             </div>

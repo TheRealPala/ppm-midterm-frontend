@@ -11,7 +11,8 @@ export function NavCollapsed ({setCollapsed}:navCollapsedProps) {
     return <div className="nav-collapsed d-flex justify-content-center position-sticky">
         <div
             className="position-relative custom-width search-container d-flex justify-content-center align-items-center">
-            <input type="text" className="form-control search-input" placeholder="Cerca articoli o argomenti"/>
+            <label htmlFor={"search-nav-collapsed"} className="visually-hidden">Cerca articoli o argomenti</label>
+            <input id={"search-nav-collapsed"} type="text" className="form-control search-input" placeholder="Cerca articoli o argomenti"/>
             <span className="submit">
                     <FontAwesomeIcon icon={faMagnifyingGlass}/>
             </span>

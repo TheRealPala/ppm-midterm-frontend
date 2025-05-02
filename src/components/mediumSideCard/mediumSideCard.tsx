@@ -11,10 +11,10 @@ export function MediumSideCard ({large=false}) {
             </div>
             <div className={classNames("ps-3 d-flex flex-column align-items-start", large ? 'col-10' : 'col-9')}>
                 <text className={"h5 text-white d-flex flex-column"}>
-                    <span className={"fw-semibold text-wrap orange-hover serif-font medium-side-card-text "}>
+                    <h2 className={"h5 fw-semibold text-wrap orange-hover serif-font medium-side-card-text "}>
                         Lorem ipsum dolor sit amet.
                         {large && (<text>dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </text>)}
-                    </span>
+                    </h2>
                     <span className={classNames("text-orange sans-serif-font mt-1", large ? 'card-author-lg' : 'card-author')}>LOREM IPSUM DOLOR</span>
                     <span className={"text-author-style"}>lorem ipsum</span>
                 </text>

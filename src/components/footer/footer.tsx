@@ -9,7 +9,7 @@ const Footer: FC<footerProps> = () => (
       <section className={"custom-width px-2 d-flex flex-md-row flex-column"}>
           <div className={"col-md-3 col-12 footer-divider d-flex flex-column align-items-md-end align-items-center pe-md-5 pt-4"}>
               <div className={"d-flex flex-column mb-3 w-100"}>
-                  <img alt={"logo"} className={"mb-3"} src={"https://placehold.co/188x35"}/>
+                  <img alt={"journal logo"} className={"mb-3"} src={"https://placehold.co/188x35"}/>
                   <text className={"w-100 text-md-start text-center lh-lg footer-text-sm border-bottom-light-gray pb-2"}>
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum dolor</span> <br/>
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum dolor</span> <br/>
@@ -23,9 +23,9 @@ const Footer: FC<footerProps> = () => (
                       <text className={"fw-semibold"}>APP</text>
                       <br/>
                       <div className={"d-flex justify-content-start lh-lg"}>
-                          <span className={"color-text-gray text-decoration-underline blue-text-hover"}>Lorem</span>
+                          <a href="#" className={"color-text-gray text-decoration-underline blue-text-hover"}>Lorem</a>
                           <span className={"mx-2"}>|</span>
-                          <span className={"color-text-gray text-decoration-underline blue-text-hover"}>Lorem</span>
+                          <a href={"#"} className={"color-text-gray text-decoration-underline blue-text-hover"}>Lorem</a>
                       </div>
                   </div>
                   <div className={"py-3 footer-text mb-md-5 col-md-12 col-6"}>

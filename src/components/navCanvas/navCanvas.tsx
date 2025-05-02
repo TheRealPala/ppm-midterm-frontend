@@ -18,15 +18,19 @@ export function NavCanvas({show, setShow}: NavCanvasProps) {
     return (
         <Navbar.Offcanvas
             placement="start"
-            aria-labelledby={'offcanvasNavbar'}
+            aria-labelledby={'offcanvasNavbarLabel'}
             show={show} onHide={handleClose}
         >
             <div className="h-100 w-100 position-relative">
                 <Offcanvas.Header>
+                    <Offcanvas.Title id="offcanvasNavbarLabel" className={"visually-hidden"}>
+                        Menu di navigazione
+                    </Offcanvas.Title>
                     <div className="w-100 d-flex align-content-center">
                         <img alt={"logo"} className="me-auto" src={"https://placehold.co/40x60"} />
                         <div className={"position-relative mt-auto mb-auto"}>
-                            <input className="canvas-search mt-auto mb-auto" type="search" name="query"
+                            <label htmlFor="search-canvas" className="visually-hidden">Cerca articoli o argomenti</label>
+                            <input className="canvas-search mt-auto mb-auto" id="search-canvas" type="search" name="query"
                                    placeholder="Ricerca su TITOLO_SITO"/>
                             <span className="search-submit">
                                 <FontAwesomeIcon icon={faMagnifyingGlass}/>

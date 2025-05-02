@@ -82,8 +82,8 @@ const WordsSection = () => (
                 <span className={"wg-border-right pe-5 text-end"}>LOREM</span>
                 <span className={"ps-5 text-start"}>LOREM-IPSUM</span>
             </div>
-            <label className={"w-full text-center w-font mt-3 px-4"}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</label>
-            <input type="text" name="cerca" className="wb-search" id="cerca" value=""/>
+            <label htmlFor={"wb-search"} className={"w-full text-center w-font mt-3 px-4"}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</label>
+            <input type="text" name="cerca" id="wb-search" className="wb-search" value=""/>
             <div className={"d-flex align-content-center justify-content-center"}>
                 <button type="submit" name="vai" className="w-button" value="Cerca">CERCA</button>
             </div>

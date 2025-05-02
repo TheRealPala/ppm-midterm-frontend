@@ -1,4 +1,3 @@
-import {useIsMobile} from "../services/mobileService";
 import {CustomNavbar} from "../components/navbar/navbar";
 import {NavBanner} from "../components/navBanner/navBanner";
 import {Logo} from "../components/logo/logo";
@@ -40,7 +39,7 @@ export function Home() {
                         title={
                             <>
                                 <div className={"w-100 h-100 d-flex text-center h4 mb-0 justify-content-center mt-2"}>
-                                    <span className={"border-bottom border-3 border-danger fw-bold"}>Lorem ipsum</span>
+                                    <h1 className={"border-bottom border-3 border-danger fw-bold h4"}>Lorem ipsum</h1>
                                 </div>
                             </>
                         }
@@ -358,7 +357,7 @@ export function Home() {
                             <SideBannerWrapper />
                             <div className={"d-flex border-1 border-bottom border-black p-2 pt-4"}>
                                 <div className={"col-6 h-div d-flex flex-column h5 align-items-center "}>
-                                    <img src={"https://placehold.co/133x75"}/>
+                                    <img alt=""src={"https://placehold.co/133x75"}/>
                                     <span className={"h6 mb-0"}>
                                         <text className={"text-orange sans-serif-font fw-semibold"}>
                                             Lorem ipsum
@@ -369,7 +368,7 @@ export function Home() {
                                     </text>
                                 </div>
                                 <div className={"col-6 d-flex flex-column h5 align-items-center "}>
-                                    <img src={"https://placehold.co/133x75"}/>
+                                    <img alt="side banner illustration" src={"https://placehold.co/133x75"}/>
                                     <span className={"h6 mb-0"}>
                                         <text className={"text-orange sans-serif-font fw-semibold"}>
                                             Lorem ipsum

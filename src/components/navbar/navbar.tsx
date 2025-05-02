@@ -42,7 +42,7 @@ export function CustomNavbar() {
                             className="col-md-2 col-10 text-center align-content-center navbar-color subscribe fw-bold">
                             <span className="color-change d-none d-md-inline">ABBONATI</span>
                             <span className="color-change d-inline d-md-none">
-                                    <img alt={"logo"} src={"https://placehold.co/138x28"} /></span>
+                                    <img alt={"journal logo"} src={"https://placehold.co/138x28"} /></span>
                         </div>
                         <div
                             className="col-md-5 col-1 d-flex text-center align-items-center justify-content-end navbar-color pe-3 pt-1">

@@ -13,9 +13,9 @@ export function CarouselItem({columnView=false, last, body, hidePic=false}: any)
                 </div>
                 {!hidePic &&
                     <div className="col-12 d-flex align-items-center justify-content-center">
-                        {columnView &&  <img className="carousel-img d-none d-md-inline" src={"https://placehold.co/267x156"}/>}
-                        {!columnView && <img className="carousel-img d-none d-md-inline" src={"https://placehold.co/278x156"}/>}
-                        <img className="carousel-img d-inline d-md-none" src={"https://placehold.co/490x275"}/>
+                        {columnView &&  <img alt={"illustration of the news"} className="carousel-img d-none d-md-inline" src={"https://placehold.co/267x156"}/>}
+                        {!columnView && <img alt={"illustration of the news"} className="carousel-img d-none d-md-inline" src={"https://placehold.co/278x156"}/>}
+                        <img alt={"illustration of the news"} className="carousel-img d-inline d-md-none" src={"https://placehold.co/490x275"}/>
                     </div>
                 }
             </div>

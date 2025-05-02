@@ -11,13 +11,13 @@ export function ColStaticDisplay({title, body, bottom, additionalClasses}: any) 
                 {title}
             </div>
             <div className={"d-flex w-100 flex-column-reverse col-static-dis-wrapper"}>
-                <div
-                    className="col-12 text-wrap text-container text-center d-flex flex-column align-items-center justify-content-center">
+                <h1
+                    className="col-12 text-wrap text-container fw-semibold text-center d-flex flex-column align-items-center justify-content-center">
                     {body}
-                </div>
+                </h1>
                 <div className="col-12  d-flex align-items-center justify-content-center">
-                    <img className="col-img d-md-block d-none" src={"https://placehold.co/862x484"}/>
-                    <img className="col-img d-md-none d-block" src={"https://placehold.co/767x767"}/>
+                    <img alt="illustration of news" className="col-img d-md-block d-none" src={"https://placehold.co/862x484"}/>
+                    <img alt="illustration of news" className="col-img d-md-none d-block" src={"https://placehold.co/767x767"}/>
                 </div>
             </div>
             {bottom}
