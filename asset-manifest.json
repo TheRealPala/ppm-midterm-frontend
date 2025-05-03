@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ppm-midterm-frontend/static/css/main.6166f0c5.css",
+    "main.css": "/ppm-midterm-frontend/static/css/main.fd1c2336.css",
     "main.js": "/ppm-midterm-frontend/static/js/main.37e06c63.js",
     "static/js/453.5471eaac.chunk.js": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js",
     "index.html": "/ppm-midterm-frontend/index.html",
-    "main.6166f0c5.css.map": "/ppm-midterm-frontend/static/css/main.6166f0c5.css.map",
+    "main.fd1c2336.css.map": "/ppm-midterm-frontend/static/css/main.fd1c2336.css.map",
     "main.37e06c63.js.map": "/ppm-midterm-frontend/static/js/main.37e06c63.js.map",
     "453.5471eaac.chunk.js.map": "/ppm-midterm-frontend/static/js/453.5471eaac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6166f0c5.css",
+    "static/css/main.fd1c2336.css",
     "static/js/main.37e06c63.js"
   ]
 }
