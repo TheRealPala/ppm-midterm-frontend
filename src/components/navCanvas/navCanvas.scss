@@ -38,7 +38,7 @@
   -webkit-transition: .1s ease;
   -o-transition: .1s ease;
   transition: .1s ease;
-  width: 275px;
+  max-width: 275px;
   min-height: 45px;
   max-height: 45px;
   display: block;
@@ -96,4 +96,9 @@
   height: 85vh;
 }
 
-
+@media (max-width: 400px) {
+  .canvas-search {
+    max-width: 275px;
+    width: auto;
+  }
+}
