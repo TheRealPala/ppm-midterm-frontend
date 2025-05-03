@@ -2,13 +2,3 @@
     border-top: 1px solid lightgray;
     width: 95%;
 }
-.ver-divider {
-    border-right: 1px solid lightgray;
-}
-
-@media (max-width: 767px) {
-    .ver-divider {
-        border-right: 0;
-        border-bottom: 1px solid lightgray;
-    }
-}

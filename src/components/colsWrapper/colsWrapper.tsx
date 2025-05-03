@@ -10,7 +10,6 @@ export function ColsWrapper({title, firstCol, secondCol, thirdCol}:any) {
         });
         return validNode.length > 0;
     }
-    //TODO: Vertical divider as golbal class
     return (
         <div className="w-full d-flex flex-column p-3 border-standard">
             <div className={"d-flex w-full justify-content-center align-items-center mb-3"}>

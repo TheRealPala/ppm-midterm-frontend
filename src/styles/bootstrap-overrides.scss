@@ -115,6 +115,17 @@
   color: $blue-hover !important;
 }
 
+.ver-divider {
+  border-right: 1px solid lightgray;
+}
+
+@media (max-width: 767px) {
+  .ver-divider {
+    border-right: 0;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
 .comment {
   border-radius: 0 4px 4px 4px;
   background-color: #e9e9e9;
