@@ -34,6 +34,12 @@
   background-color: $card-gray ;
 }
 
+.footer-end-text {
+  font-size:11px;
+  color: #5a5a5a;
+  text-decoration: none;
+}
+
 .flex-col-wrap {
   flex-flow: column wrap;
   gap: 30px;

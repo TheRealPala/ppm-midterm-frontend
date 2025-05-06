@@ -74,14 +74,13 @@ const Footer: FC<footerProps> = () => (
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum</span>
                       <span className={"color-text-gray blue-text-hover"}>Lorem ipsum</span>
                   </div>
-
               </div>
           </div>
       </section>
-      <div className={"w-100 p-2 footer-end z-3 d-flex justify-content-center"}>
-          <div className={"custom-width d-flex gap-3 footer-text-sm align-items-center justify-content-center overflow-x-scroll"}>
+      <div className={"w-100 p-2 footer-end z-3 d-flex justify-content-center p-3 mt-3 mt-sm-0"}>
+          <div className={"custom-width d-flex gap-1 gap-md-2 footer-text-sm align-items-center justify-content-center flex-wrap"}>
                {footerBottomItems.map((item:string) => (
-                      <span className={"color-text-gray blue-text-hover"}>{item}</span>
+                      <a href={""} className={"blue-text-hover footer-end-text"}>{item}</a>
               ))}
           </div>
       </div>
