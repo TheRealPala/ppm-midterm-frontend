@@ -184,7 +184,7 @@ export function Home() {
                                 body={
                                     <>
                                         <div className={"h-100 d-flex align-items-start flex-column"}>
-                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                 <span className={"h6"}><text
                                                     className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
                                                 <br/>
@@ -206,7 +206,7 @@ export function Home() {
                                         <>
                                             <div className={"h-100 d-flex align-items-start flex-column"}>
                                                 <text
-                                                    className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                    className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
                                                         className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
                                                     <br/>
@@ -229,7 +229,7 @@ export function Home() {
                                     <>
                                         <div className={"h-100 d-flex align-items-start flex-column"}>
                                             <text
-                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
                                                         className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
                                                 <br/>
@@ -261,7 +261,7 @@ export function Home() {
                                     <>
                                         <div className={"h-100 d-flex align-items-start flex-column"}>
                                             <text
-                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap"}>
+                                                className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
                                                         className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
                                                 <br/>
@@ -287,7 +287,7 @@ export function Home() {
                                 body={
                                     <>
                                         <div className={"h-100 d-flex flex-column justify-content-start"}>
-                                            <text className={"text-md-start h4 serif-font fw-semibold"}>
+                                            <text className={"text-md-start h4 serif-font fw-semibold px-3 px-md-0"}>
                                                 <span className={"sans-serif-font h6 fw-semibold color-text-gray"}>LOREM <br/> </span>
                                                 <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                                 <br/>
