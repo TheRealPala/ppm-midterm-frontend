@@ -10,8 +10,8 @@ export function SmallSideCard () {
             </div>
             <div className={"col-8 d-flex flex-column align-items-start"}>
                 <text className={"h6 text-white"}>
-                    <span className={"text-light-orange fw-semibold"}>LOREM IPSUM</span> <br />
-                    <span className={"fw-semibold text-wrap light-orange-hover"}> Lorem ipsum dolor sit amet.
+                    <span className={"text-light fw-semibold"}>LOREM IPSUM</span> <br />
+                    <span className={"fw-semibold text-wrap light-hover"}> Lorem ipsum dolor sit amet.
                     </span> <br />
                     <span className={"card-author"}>LOREM IPSUM DOLOR</span>
                 </text>

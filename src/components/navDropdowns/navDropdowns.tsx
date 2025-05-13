@@ -15,13 +15,9 @@ export function NavDropdowns () {
             <NavDropdown props={services} grid={true}></NavDropdown>
         </nav>
         <div className={"ps-3 w-100 nav-topics-wrapper overflow-x-scroll"}>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
-            <a href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
+            {[...Array(7)].map((_, index) => (
+                <a key={index} href={"#"} className={"nav-topics fw-semibold"}>Lorem</a>
+            ))}
         </div>
     </div>
 }

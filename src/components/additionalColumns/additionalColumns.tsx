@@ -15,8 +15,8 @@ export function additionalColumns({standard = false, sport = false, grey = false
                     <div className={classNames(hideSecondCol ? "col-8 ps-sm-3" : "col-6")}>
                         <h2 className={"serif-font text-wrap fw-semibold h5 pe-2 text-start"}>
                             <span
-                                className={classNames({'text-orange': standard}, {"sport-title": sport}, {'color-text-gray': grey})}>Lorem</span>
-                            <span className={classNames({'blue-text-hover': sport || grey})}> ipsum dolor sit amet,
+                                className={classNames({'text-danger': standard || grey}, {"sport-title": sport}, {'text-black': grey})}>Lorem</span>
+                            <span className={classNames({'blue-text-hover': sport}, {'danger-hover': grey})}> ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
                             </span>
                             <br/>
@@ -31,8 +31,8 @@ export function additionalColumns({standard = false, sport = false, grey = false
                     <h2 className={"col-md-4 col-12 d-flex align-items-start ps-md-3 pt-3 pt-md-0 h5"}>
                         <text className={"serif-font text-wrap fw-semibold"}>
                             <span
-                                className={classNames({'text-orange': standard}, {"sport-title": sport}, {'color-text-gray': grey})}>Lorem</span>
-                            <span className={classNames({'blue-text-hover': sport || grey})}> ipsum dolor sit amet,
+                                className={classNames({'text-danger': standard}, {"sport-title": sport}, {'text-black': grey})}>Lorem</span>
+                            <span className={classNames({'blue-text-hover': sport}, {'danger-hover': grey})}> ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
                             </span>
                         </text>

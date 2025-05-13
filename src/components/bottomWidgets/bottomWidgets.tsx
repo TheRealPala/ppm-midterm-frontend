@@ -95,7 +95,7 @@ const WordsSection = () => (
                 <img src={"https://placehold.co/800x176"} alt={"background-img"} className={"img-book-banner"}/>
                 <div className={"position-absolute bottom-0 w-font ps-3"}>
                     <span className={"text-white bg-danger p-1 w-auto"}>LOREM</span> <br />
-                    <span className={"fw-semibold text-white"}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </span>
+                    <span className={"fw-semibold text-dark"}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </span>
                 </div>
             </div>
             <div className={"d-flex ps-3 py-3"}>

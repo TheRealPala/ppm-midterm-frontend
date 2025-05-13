@@ -32,7 +32,8 @@
 }
 
 .border-main-title {
-  border-bottom: 4px $orange solid;
+  border-bottom: 4px solid;
+  border-color: var(--bs-danger);
 }
 
 .border-dark-blue-title {
@@ -71,14 +72,14 @@
   line-height: 24px;
 }
 
-.orange-hover:hover {
-  color: $orange !important;
+.danger-hover:hover {
+  color: var(--bs-danger) !important;
   cursor: pointer;
 }
 
 .text-author-style {
   font-size: 14px;
-  color: grey;
+  color: black;
   font-family: $font-serif;
   font-style: oblique;
 }
@@ -100,7 +101,7 @@
 }
 
 .sport-title {
-  color: $sport-title-color !important;
+  color: blue
 }
 
 .border-sport-title {

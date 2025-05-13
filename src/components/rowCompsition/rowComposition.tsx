@@ -12,7 +12,7 @@ export function RowComposition({length = 4, dynamic= true} ) {
                         <RowDisplay last = {index === length - 1 } body={
                             <>
                                 <div className={"w-full h-full text-start fw-semibold"}>
-                                    <span className={"text-orange text-wrap"}>Lorem ipsum</span> dolor sit amet,
+                                    <span className={"text-danger text-wrap"}>Lorem ipsum</span> dolor sit amet,
                                     consetetur
                                     sadipscing elitr, sed diam nonumy.
                                 </div>

@@ -62,11 +62,11 @@ export function Home() {
                         <>
                             <div
                                 className={"w-100 d-flex justify-content-center h6"}>
-                                <span className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
+                                <span className={"ms-2 sans-serif-font text-danger fw-semibold"}>LOREM IPSUM </span>
                             </div>
                             <div className={"text-center"}>
                                 Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
+                                sadipscing elitr, sed diam nonumy <span className={"text-danger"}>| Lorem ipsum</span>
                             </div>
                         </>
                     }/>
@@ -82,11 +82,11 @@ export function Home() {
                                         <div
                                             className={"w-100 d-flex justify-content-center h6"}>
                                             <span
-                                                className={"ms-2 sans-serif-font text-orange fw-semibold"}>LOREM IPSUM </span>
+                                                className={"ms-2 sans-serif-font text-danger fw-semibold"}>LOREM IPSUM </span>
                                         </div>
                                         <div className={"text-center"}>
                                             Lorem ipsum dolor sit amet, consetetur
-                                            sadipscing elitr, sed diam nonumy <span className={"text-orange"}>| Lorem ipsum</span>
+                                            sadipscing elitr, sed diam nonumy <span className={"text-danger"}>| Lorem ipsum</span>
                                         </div>
                                     </>
                                 }
@@ -99,7 +99,7 @@ export function Home() {
                                     title={
                                         <>
                                             <text className={"h3 fw-semibold"}>Lorem <span
-                                                className={"text-orange"}>50</span></text>
+                                                className={"text-danger"}>50</span></text>
                                         </>
                                     }
 
@@ -126,7 +126,7 @@ export function Home() {
                                         <div className={"h-100 d-flex flex-column justify-content-start"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold"}>
                                                 <span
-                                                    className={"sans-serif-font h6 fw-semibold sport-title"}>LOREM <br/> </span>
+                                                    className={"sans-serif-font fs-6 fw-semibold sport-title"}>LOREM <br/> </span>
                                                 <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                                 <br/>
                                                 <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
@@ -144,7 +144,7 @@ export function Home() {
                                     <>
                                         <div className={"h-100 d-flex flex-column align-items-start"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold mt-1"}>
-                                                <span className={"text-orange"}>Lorem ipsum</span> dolor sit
+                                                <span className={"text-danger"}>Lorem ipsum</span> dolor sit
                                                 amet, consetetur
                                                 sadipscing elitr, sed diam nonumy.
                                             </text>
@@ -160,8 +160,8 @@ export function Home() {
                             className="sticky-col-el d-flex justify-content-center pb-4 border-bottom border-1 border-black">
                             <Card title={"Lorem"} body={
                                 <>
-                                    <span className={"text-white h6 sans-serif-font"}>LOREM</span>
-                                    <div className={"w-100 text-start text-wrap serif-font orange-hover h3 text-white"}>
+                                    <span className={"text-black h6 sans-serif-font"}>LOREM</span>
+                                    <div className={"w-100 text-start text-wrap serif-font danger-hover h3 text-black"}>
                                         Lorem ipsum dolor sit amet, consetetur
                                         sadipscing elitr, sed diam nonumy.
                                         <br/>
@@ -186,7 +186,7 @@ export function Home() {
                                         <div className={"h-100 d-flex align-items-start flex-column"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                 <span className={"h6"}><text
-                                                    className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                    className={"fw-semibold sans-serif-font text-danger"}>LOREM IPSUM</text></span>
                                                 <br/>
                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -208,7 +208,7 @@ export function Home() {
                                                 <text
                                                     className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
-                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                        className={"fw-semibold sans-serif-font text-danger"}>LOREM IPSUM</text></span>
                                                     <br/>
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                     nonumy
@@ -231,7 +231,7 @@ export function Home() {
                                             <text
                                                 className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
-                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                        className={"fw-semibold sans-serif-font text-danger"}>LOREM IPSUM</text></span>
                                                 <br/>
                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                 nonumy
@@ -263,7 +263,7 @@ export function Home() {
                                             <text
                                                 className={"text-md-start h4 serif-font fw-semibold mt-1 text-wrap px-3 px-md-0"}>
                                                     <span className={"h6"}><text
-                                                        className={"fw-semibold sans-serif-font text-orange"}>LOREM IPSUM</text></span>
+                                                        className={"fw-semibold sans-serif-font text-danger"}>LOREM IPSUM</text></span>
                                                 <br/>
                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                                 nonumy
@@ -280,7 +280,7 @@ export function Home() {
                             <ColDisplay
                                 title={
                                     <section className={"w-100 pt-2 pb-1 text-center"}>
-                                        <text className={"fw-semibold serif-font h4 border-text-gray-title "}>Lorem Ipsum</text>
+                                        <text className={"fw-semibold serif-font h4 border-main-title "}>Lorem Ipsum</text>
                                     </section>
                                 }
                                 additionalClasses="border-top-0 grey-col-dis py-3"
@@ -288,8 +288,8 @@ export function Home() {
                                     <>
                                         <div className={"h-100 d-flex flex-column justify-content-start"}>
                                             <text className={"text-md-start h4 serif-font fw-semibold px-3 px-md-0"}>
-                                                <span className={"sans-serif-font h6 fw-semibold color-text-gray"}>LOREM <br/> </span>
-                                                <span className={"blue-text-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
+                                                <span className={"sans-serif-font h6 fw-semibold text-black"}>LOREM <br/> </span>
+                                                <span className={"danger-hover"}>Lorem ipsum dolor sit  amet, consetetur  sadipscing elitr, sed diam nonumy.</span>
                                                 <br/>
                                                 <span className={"text-author-style w-100 text-md-start text-center"}>lorem ipsum</span>
                                             </text>
@@ -359,7 +359,7 @@ export function Home() {
                                 <div className={"col-6 h-div d-flex flex-column h5 align-items-center "}>
                                     <img alt=""src={"https://placehold.co/133x75"}/>
                                     <span className={"h6 mb-0"}>
-                                        <text className={"text-orange sans-serif-font fw-semibold"}>
+                                        <text className={"text-danger sans-serif-font fw-semibold"}>
                                             Lorem ipsum
                                         </text>
                                     </span>
@@ -370,7 +370,7 @@ export function Home() {
                                 <div className={"col-6 d-flex flex-column h5 align-items-center "}>
                                     <img alt="side banner illustration" src={"https://placehold.co/133x75"}/>
                                     <span className={"h6 mb-0"}>
-                                        <text className={"text-orange sans-serif-font fw-semibold"}>
+                                        <text className={"text-danger sans-serif-font fw-semibold"}>
                                             Lorem ipsum
                                         </text>
                                     </span>
